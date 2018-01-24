@@ -1,0 +1,75 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for rotated page geometry
+\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or epsÂ§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\usepackage{hyperref} 
+\usepackage{graphicx}
+
+\usepackage[brazilian]{babel}
+%\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+%SetFonts
+
+%SetFonts
+
+
+\title{Introdução ao MacTeX}
+\author{Roberto Stelling}
+%\date{}							% Activate to display a given date or no date
+
+\begin{document}
+
+\maketitle
+%\section{}
+%\subsection{}
+\section{Introdução}
+O objetivo deste texto é servir de referência à minha própria trajetória no aprendizado do LaTeX e do MacTeX, servindo como um notebook de consulta rápida. O texto não tem a pretenção de ser um manual ou tutorial de LaTeX e MacTeX, mas é bem provável que ajude à quem vier utilizar o LaTeX no MacOS pela primeira vez.
+\section{Primeiros passos}
+Esse documento foi produzido no MacOS 10.13 (High Sierra) e os procedimentos adotados aqui não foram testados em outras plataformas.
+\subsection{Download}
+O primeiro passo é baixar o MacTeX da página do \href{http://www.tug.org/mactex/index.html}{TeX Users Group}.
+Ná página há uma referência às distribuições de Mac OS que são compatíveis, quando acessei era compatível com Mac OS 10.10 ou superior. Há duas alternativas:
+\begin{itemize}
+\item \href{http://www.tug.org/mactex/mactex-download.html}{MacTex Download}
+\item \href{http://www.tug.org/mactex/morepackages.html}{Smaller Download}.
+\end{itemize}
+A não ser que você seja um usuário experimentado do LaTeX eu recomendo que baixe o  \href{http://www.tug.org/mactex/mactex-download.html}{MacTex Download}, nessa versão estão presentes praticamente todos os utilitários e pacotes que o usuário irá precisar, sem que seja necessário baixar muita coisa depois.
+\subsection{Instalação}
+O processo de instalação do MacTeX é super simples: clique duas vezes no arquivo .pkg que foi baixado, no meu caso o nome era: mactex-20170524.pkg, e siga o processo de instalação com todos os defaults. O instalador, na versão que baixei, tinha as seguintes seções:
+\begin{itemize}
+\item Introduction
+\item Read Me
+\item License
+\item Destination Select
+\item Installation Type
+\item Installation
+\item Summary
+\end{itemize}
+Ao fim da instalação você terá os seguintes pacotes disponíveis no Lauchpad:
+\begin{itemize}
+\item \textbf{BibDesk}: Utilitário para editar e gerenciar bibliografia. Mantém registro da informação bibliográfica e arquivos associados e links web. Para mais informações veja o site do próprio \href{https://bibdesk.sourceforge.io/}{BibDesk}.
+\item \textbf{LaTeXiT}: Utilitário desenvolvido por \href{https://www.chachatelier.fr/}{Pierre Chatelier}, que oferece uma interface gráfica sobre o LaTeX e é utilizado, principalmente, como um editor de equações. Permitindo que um usuário se concentre no código necessário para exibir a sua equação sem precisar criar um documento LaTeX completo.
+\item \textbf{TeXShop}: Utilitário de pré-visualização do LaTeX para Mac OS X. É no TeXShop que você editará seus documentos LaTeX.
+\item \textbf{TeX (Other)}: Subdiretório do Excalibur, o Spell Checker to LaTeX. Pessoalmente eu adoro o spell checker, nesse momento estou escrevendo um texto em português com algumas palavras em inglês e a grafia dos dois idiomas são verificadas em tempo real!
+\item \textbf{TeX Live Utility}: Ferramenta que gerencia uma distribuição do TeX Live, o MacTeX, no nosso caso. A principal função do TeX Live Utility é manter o seu ambiente do MacTeX atualizado. Especificamente, o Live Utility permite: \begin{itemize}
+\item Atualizar os pacotes instalados de acordo com as últimas versões no CTAN
+\item Instalar qualquer novo pacote que apareça no CTAN desde a última atualização
+\item Mudar o tamanho global do papel para a sua distribuição
+\end{itemize}
+\end{itemize}
+\subsection{Read Me First}
+Depois de terminar a instalação do MacTeX o meu primeiro reflexo foi de buscar informações na internet sobre o MacTeX e executar os utilitários instalados. Depois de meia hora de \emph{diversão} brincando com os utilitários eu estava mais confuso que antes de instalar o MacTeX!
+
+Como todo ambiente complexo, a principal dificuldade do usuário iniciante é ter a orientação correta, para não se perder na selva de aplicações que a distribuição do MacTeX oferece. Se você quer saber o que é possível fazer com o MacTeX, eu recomendo a leitura do singelo 	\href{http://www.tug.org/mactex/src/WelcomeToMacTeX.pdf}{Welcome To MacTeX}, escrito por Bob Kerstetter. Se você precisa de um tutorial, e se você é um usuário iniciante, eu tenho certeza que você precisa, então há dois documentos importantes que você deve manter como referência:
+\begin{itemize}
+\item Read Me First: Comece por aqui! O arquivo \emph{"READ ME FIRST.pdf"} está na pasta do TeX dentro do diretório Applications.
+\item \href{http://ftp.math.purdue.edu/mirrors/ctan.org/info/gentle/gentle.pdf}{A Gentle Introduction to TeX}: Manual de auto-estudo do TeX, escrito por Michael Doob, do departamento de matemática da Universidade de Manitoba.
+\end{itemize}
+O \emph{"READ ME FIRST.pdf"} vai mostrar a porta de entrada do MacTeX e ajudar no aprendizado da utilização do sistema.
+\section{TeXShop - Dicas, truques e quebra-galhos}
+\end{document}
