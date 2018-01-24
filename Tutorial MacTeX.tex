@@ -25,12 +25,20 @@
 %\date{}							% Activate to display a given date or no date
 
 \begin{document}
-
-\maketitle
-%\section{}
-%\subsection{}
+%\maketitle
+\begin{titlepage}
+   \vspace*{\stretch{1.0}}
+   \begin{center}
+      \Large\textbf{Introdução ao Mac\Hologo{TeX}}\par
+      \large\textit{Roberto Stelling}\par
+      \large\today\par
+      \vspace*{1\baselineskip}PPGI\\
+	Universidade Federal do Rio de Janeiro\\[\baselineskip]
+   \end{center}
+   \vspace*{\stretch{2.0}}
+\end{titlepage}
 \section{Introdução}
-O objetivo deste texto é servir de referência à minha própria trajetória no aprendizado do \Hologo{TeX} e do Mac\Hologo{TeX}, servindo como um notebook de consulta rápida. O texto não tem a pretenção de ser um manual ou tutorial de \Hologo{TeX} e Mac\Hologo{TeX}, mas é bem provável que ajude à quem vier utilizar o Mac\Hologo{TeX} no MacOS pela primeira vez.
+O objetivo deste texto é servir de referência à minha própria trajetória no aprendizado do \Hologo{TeX} e do Mac\Hologo{TeX}, servindo como um notebook de consulta rápida. O texto não tem a pretensão de ser um manual ou tutorial de \Hologo{TeX} e Mac\Hologo{TeX}, mas é bem provável que ajude à quem vier utilizar o Mac\Hologo{TeX} no MacOS pela primeira vez.
 \section{Primeiros passos}
 \subsection{Conceitos e definições}
 Antes de começar, vamos ver as definições de alguns dos termos que usaremos com frequência nesse texto:
@@ -145,7 +153,8 @@ Como todo ambiente complexo, a principal dificuldade do usuário iniciante é ter 
 \item \href{http://ftp.math.purdue.edu/mirrors/ctan.org/info/gentle/gentle.pdf}{A Gentle Introduction to \Hologo{TeX}}: Manual de auto-estudo do \Hologo{TeX}, escrito por Michael Doob, do departamento de matemática da Universidade de Manitoba.
 \end{itemize}
 O \emph{"READ ME FIRST.pdf"} vai mostrar a porta de entrada do Mac\Hologo{TeX} e ajudar no aprendizado da utilização do sistema.
-\section{TeXShop - Dicas, truques e quebra-galhos}
+\section{TeXShop}
+\subsection{Dicas, truques e quebra-galhos}
 
 O que vamos descrever a seguir baseia-se parcialmente no \textbf{READ ME First.pdf} do Mac\Hologo{TeX}, mas incluímos informações que não constam naquele tutorial, seja porque são específicas do idioma português, ou seja porque não estão nos temas cobertos pelo  \textbf{READ ME First.pdf}. De qualquer forma, recomendo a sua leitura!
 
@@ -231,6 +240,16 @@ A primeira linha inclui o português brasileiro como texto de entrada. A segunda 
 \item Clique outra vez em \emph{Typeset} e voilà, você compôs seu primeiro documento \Hologo{LaTeX} correto!
 \end{enumerate}
 A partir deste ponto você pode, e deve, modificar o seu texto e clicar em \emph{Typeset} a qualquer momento que você queira ver como o texto está. A junção do \Hologo{LaTeX} com TeXShop e a funcionalidade de \emph{Typeset} facilitam brutalmente o uso do \Hologo{TeX} e a curva de aprendizado do sistema de composição tipográfica.
+\subsection{Próximos passos}
+É fácil executar as tarefas mais comuns no TeXShop, então não vou entrar em detalhes de como abrir um arquivo recente, por exemplo. Por outro lado há funções poderosas de macros e Typeset que estão além do objetivo deste texto. No \emph{Help} TeXShop há vários recursos importantes, que valem a leitura:
+\begin{itemize}
+\item First Steps with TeXShop
+\item TeXShop Demos
+\item TeXShop tips and tricks
+\item First Steps with General Typesetting
+\item First Steps with Mathematical Typesetting
+\item George Grätzer's Short Course
+\end{itemize}
 \section{Referência rápida de comandos}
 \begin{verbatim}
 \emph{texto}
