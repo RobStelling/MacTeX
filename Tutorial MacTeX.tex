@@ -119,10 +119,12 @@ O processo de instalação do Mac\Hologo{TeX} é super simples: clique duas vezes n
 \item Installation
 \item Summary
 \end{itemize}
-Ao fim da instalação você terá os seguintes pacotes disponíveis no Lauchpad, como mostrado no exemplo abaixo:
-
+\begin{figure}[h!]
 \includegraphics[width=\textwidth]{LaunchPad}
-
+\caption{Launchpad}
+\label{fig:Launchpad}
+\end{figure}
+Ao fim da instalação você terá os seguintes pacotes disponíveis no Lauchpad, como mostrado na Figura \ref{fig:Launchpad}:
 \begin{itemize}
 \item \textbf{BibDesk}: Utilitário para editar e gerenciar bibliografia. Mantém registro da informação bibliográfica e arquivos associados e links web. Para mais informações veja o site do próprio \href{https://bibdesk.sourceforge.io/}{BibDesk}.
 \item \textbf{LaTeXiT}: Utilitário desenvolvido por \href{https://www.chachatelier.fr/}{Pierre Chatelier}, que oferece uma interface gráfica sobre o \Hologo{LaTeX} e é utilizado, principalmente, como um editor de equações. Permitindo que um usuário se concentre no código necessário para exibir a sua equação sem precisar criar um documento \Hologo{LaTeX} completo.
@@ -144,20 +146,33 @@ Como todo ambiente complexo, a principal dificuldade do usuário iniciante é ter 
 \end{itemize}
 O \emph{"READ ME FIRST.pdf"} vai mostrar a porta de entrada do Mac\Hologo{TeX} e ajudar no aprendizado da utilização do sistema.
 \section{TeXShop - Dicas, truques e quebra-galhos}
+
 O que vamos descrever a seguir baseia-se parcialmente no \textbf{READ ME First.pdf} do Mac\Hologo{TeX}, mas incluímos informações que não constam naquele tutorial, seja porque são específicas do idioma português, ou seja porque não estão nos temas cobertos pelo  \textbf{READ ME First.pdf}. De qualquer forma, recomendo a sua leitura!
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.5]{TeXShop}
+\end{center}
+\caption{TeXShop no Launchpad}
+\label{fig:TeXShop}
+\end{figure}
 
 O primeiro passo ao usar o Mac\Hologo{TeX} é criar um novo documento \Hologo{TeX}. Execute as etapas à seguir:
 \begin{enumerate}
-\item Vá até o LaunchPad e execute o comando TeXShop, se necessário, busque o comando, como mostrado na figura a seguir. 
-
-\includegraphics[scale=0.35]{TeXShop}
-\item Você verá uma tela em branco do TeXShop.
-
+\item Vá até o LaunchPad e execute o comando TeXShop, se necessário, busque o comando, como mostrado na Figura \ref{fig:TeXShop}. 
+\begin{figure}[h!]
 \includegraphics[width=\textwidth]{TeXShopBlank}
+\caption{Tela inicial do TeXShop}
+\label{fig:TeXShopInicial}
+\end{figure}
+\item Você verá uma tela em branco do TeXShop, como na Figura \ref{fig:TeXShopInicial}.
 \item Clique em \emph{Templates} e selecione LatexTemplate
-\item Você terá na tela um documento com o conteúdo similar ao abaixo:
-
+\begin{figure}[h!]
 \includegraphics[width=\textwidth]{TeXShopLatexTemplate}
+\caption{LatexTemplate do ShopTeX}
+\label{fig:LatexTemplate}
+\end{figure}
+\item Você verá um documento \Hologo{LaTeX} com o conteúdo similar à Figura \ref{fig:LatexTemplate}:
 \item As linhas em vermelho são comentários que o \Hologo{TeX} ignora. Agora você precisa editar o conteúdo, que está entre as linhas
 \begin{verbatim}
 \begin{document}
@@ -189,13 +204,20 @@ escreva
 \begin{verbatim}
 Alô mundo!
 \end{verbatim}
-Depois disto clique em \emph{Typeset}. O TeXShop cria vários arquivos quando é selecionada a opção Typeset, nesse momento você será apresentado com um diálogo para salvar a sua página em algum lugar para que os arquivos possam ser gerados, como mostrado na figura abaixo.
-
+Depois disto clique em \emph{Typeset}. O TeXShop cria vários arquivos quando é selecionada a opção Typeset, nesse momento você será apresentado com um diálogo para salvar a sua página em algum lugar para que os arquivos possam ser gerados, como mostrado na Figura \ref{fig:SalvaDoc}.
+\begin{figure}[h!]
 \includegraphics[width=\textwidth]{TeXShopSaveAs}
+\caption{Salvando o documento criado}
+\label{fig:SalvaDoc}
+\end{figure}
 \item Mude o nome do arquivo para AloMundo, escolha um diretório adequado para o documento (como cada documento é na verdade um conjunto de arquivos, é melhor deixar cada documento \Hologo{TeX} na sua própria pasta) e clique em \emph{Save}.
-\item Se você fez tudo certo, você terá nesse momento o seu primeiro documento \Hologo{LaTeX}! E ele estará grandiosamente errado, como você verá na página do Typeset (que é o seu conteúdo publicado em PDF!). O texto \emph{"Alô"} é publicado como \emph{"Al"}. Os acentos não são mostrados corretamente!
+\item Se você fez tudo certo, você terá nesse momento o seu primeiro documento \Hologo{LaTeX}! E ele estará grandiosamente errado, como você verá na página do Typeset (que é o seu conteúdo publicado em PDF!). O texto \emph{"Alô"} é publicado como \emph{"Al"}. Veja na Figura \ref{fig:Almundo} como os acentos não são mostrados corretamente!
 
+\begin{figure}[h!]
 \includegraphics[width=\textwidth]{AloMundo}
+\caption{Al mundo}
+\label{fig:Almundo}
+\end{figure}
 \item Volte à janela do TeXShop, e logo antes de:
 \begin{verbatim}
 %SetFonts
@@ -205,6 +227,52 @@ digite
 \usepackage[brazilian]{babel}
 \usepackage[T1]{fontenc}	
 \end{verbatim}
-\item Clique outra vez em \emph{Typeset} e voilà, você tem seu primeiro documento \Hologo{LaTeX} correto!
+A primeira linha inclui o português brasileiro como texto de entrada. A segunda linha determina a codificação da fonte com 8 bits, o que permite a utilização, sem problemas, de caracteres acentuados, entre outros.
+\item Clique outra vez em \emph{Typeset} e voilà, você compôs seu primeiro documento \Hologo{LaTeX} correto!
 \end{enumerate}
+A partir deste ponto você pode, e deve, modificar o seu texto e clicar em \emph{Typeset} a qualquer momento que você queira ver como o texto está. A junção do \Hologo{LaTeX} com TeXShop e a funcionalidade de \emph{Typeset} facilitam brutalmente o uso do \Hologo{TeX} e a curva de aprendizado do sistema de composição tipográfica.
+\section{Referência rápida de comandos}
+\begin{verbatim}
+\emph{texto}
+\end{verbatim}
+\emph{Enfatiza o texto.} Em geral o uso de \textbackslash emph\{texto\} deixa o texto em itálico, mas o objetivo do comando é enfatizar o texto selecionado, assim \textit{se ele ocorrer dentro de um texto que já está em itálico, então o comando \emph{\textbackslash emph retira o itálico} do texto enfatizado!}
+\begin{verbatim}
+\textit{texto}
+\end{verbatim}
+\textit{Deixa o texto em itálico.}
+\begin{verbatim}
+\textbf{texto}
+\end{verbatim}
+\textbf{Deixa o texto em negrito.}
+\begin{verbatim}
+\underline{texto}
+\end{verbatim}
+\underline{Sublinha o texto.}
+\begin{verbatim}
+\par
+\end{verbatim}
+Inicia um novo\par parágrafo. Tem o mesmo efeito que deixar uma linha em branco entre duas linhas do texto de entrada.
+\begin{verbatim}
+\begin{flushleft}
+texto
+\end{flushleft}
+\end{verbatim}
+\begin{flushleft}
+Por padrão o LaTeX mantém o texto totalmente justificado, nas duas margens, o uso de flushleft força a justificação à esquerda.
+\end{flushleft}
+\begin{verbatim}
+\begin{flushright}
+texto
+\end{flushright}
+\end{verbatim}
+\begin{flushright}
+Por padrão o LaTeX mantém o texto totalmente justificado, nas duas margens, o uso de flushright força a justificação à direita.
+\end{flushright}
+\begin{verbatim}
+\begin{center}
+texto
+\end{center}
+\end{verbatim}
+\begin{center}Centraliza o texto (ou imagem)\end{center}
+
 \end{document}
