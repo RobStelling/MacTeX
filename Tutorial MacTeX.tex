@@ -2,23 +2,25 @@
 \usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
 \geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
 %\geometry{landscape}                		% Activate for rotated page geometry
-\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage[parfill]{parskip}    			% Activate to begin paragraphs with an empty line rather than an indent
 \usepackage{graphicx}				% Use pdf, png, jpg, or epsÂ§ with pdflatex; use eps in DVI mode
 								% TeX will automatically convert eps --> pdf in pdflatex		
+\graphicspath{ {imagens/} }			% Images folder
 \usepackage{amssymb}
-\usepackage{hyperref} 
-\usepackage{graphicx}
 
-\usepackage[brazilian]{babel}
+\usepackage{hyperref} 				% For URLs
+\usepackage{hologo}					% For logos
+
+\usepackage[brazilian]{babel}			% For Brazilian Portuguese
 %\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
+\usepackage[T1]{fontenc}				% And accented characters
 
 %SetFonts
 
 %SetFonts
 
 
-\title{Introdução ao MacTeX}
+\title{Introdução ao Mac\Hologo{TeX}}
 \author{Roberto Stelling}
 %\date{}							% Activate to display a given date or no date
 
@@ -28,19 +30,86 @@
 %\section{}
 %\subsection{}
 \section{Introdução}
-O objetivo deste texto é servir de referência à minha própria trajetória no aprendizado do LaTeX e do MacTeX, servindo como um notebook de consulta rápida. O texto não tem a pretenção de ser um manual ou tutorial de LaTeX e MacTeX, mas é bem provável que ajude à quem vier utilizar o LaTeX no MacOS pela primeira vez.
+O objetivo deste texto é servir de referência à minha própria trajetória no aprendizado do \Hologo{TeX} e do Mac\Hologo{TeX}, servindo como um notebook de consulta rápida. O texto não tem a pretenção de ser um manual ou tutorial de \Hologo{TeX} e Mac\Hologo{TeX}, mas é bem provável que ajude à quem vier utilizar o Mac\Hologo{TeX} no MacOS pela primeira vez.
 \section{Primeiros passos}
-Esse documento foi produzido no MacOS 10.13 (High Sierra) e os procedimentos adotados aqui não foram testados em outras plataformas.
+\subsection{Conceitos e definições}
+Antes de começar, vamos ver as definições de alguns dos termos que usaremos com frequência nesse texto:
+\begin{enumerate}
+\item \textbf{\Hologo{TeX}}: \Hologo{TeX} é o sistema de composição tipográfica desenvolvido por \href{http://sunburn.stanford.edu/~knuth/}{Donand E. Knuth}, que diz, no prefácio do seu livro sobre \Hologo{TeX} (veja na seção referências), que "\emph{\Hologo{TeX} tem o objetivo de criar livros bonitos - especialmente livros que contém muita matemática}". Knuth desenvolveu a primeira versão do \Hologo{TeX} em 1978 para gerenciar as revisões da sua série \emph{"the Art of Computer Programming"}. A ideia mostrou-se popular e Knuth produziu uma segunda versão, em 1982, que é a base do que se usa atualmente.
+\Hologo{TeX} é um macro processador, que oferece aos seus usuários funcionalidades poderosas de programação. Para compor um documento, mescla-se macros e texto e as macros definem um ambiente onde as regras de publicação do texto são produzidas. O motor do \Hologo{TeX} básico é de difícil uso e aprendizado. Reconhecendo esta deficiência (e não querendo escrever as mesmas definições no início de cada documento) Donald Knuth criou um pacote de macros para serem usadas com \Hologo{TeX}, chamada de \emph{Plain \Hologo{TeX}}. Assim Plain \Hologo{TeX} é um conjunto mínimo de macros que podem ser usadas com o \Hologo{TeX}. Quando alguém diz que está "\emph{escrevendo (ou programando) em \Hologo{TeX}}", o que se quer dizer, na verdade, é que estão programando em Plain \Hologo{TeX}.
+Então, \Hologo{TeX} é um pré-processador de texto, que tem como entradas arquivos de texto com extensão .tex, e utiliza macros e comandos para gerar a composição tipográfica do texto. Abaixo vemos um exemplo de arquivo \Hologo{TeX} retirado de \href{http://www.maths.tcd.ie/~dwilkins/LaTeXPrimer/}{\emph{Getting Started with LaTeX}}, escrito pelo \href{https://www.maths.tcd.ie/~dwilkins/}{Dr. David R. Wilkins}, professor de matemática do Trinity College Dublin.
+\begin{verbatim}
+\documentclass[a4paper,12pt]{article}
+\begin{document}
+
+The foundations of the rigorous study of \emph{analysis}
+were laid in the nineteenth century, notably by the
+mathematicians Cauchy and Weierstrass. Central to the
+study of this subject are the formal definitions of
+\emph{limits} and \emph{continuity}.
+
+Let $D$ be a subset of $\bf R$ and let
+$f \colon D \to \mathbf{R}$ be a real-valued function on
+$D$. The function $f$ is said to be \emph{continuous} on
+$D$ if, for all $\epsilon > 0$ and for all $x \in D$,
+there exists some $\delta > 0$ (which may depend on $x$)
+such that if $y \in D$ satisfies
+\[ |y - x| < \delta \]
+then
+\[ |f(y) - f(x)| < \epsilon. \]
+
+One may readily verify that if $f$ and $g$ are continuous
+functions on $D$ then the functions $f+g$, $f-g$ and
+$f.g$ are continuous. If in addition $g$ is everywhere
+non-zero then $f/g$ is continuous.
+
+\end{document}
+\end{verbatim}
+Esse texto, processado pelo \Hologo{TeX} com as macros definidas neste documento, tem a seguinte composição tipográfica:
+
+The foundations of the rigorous study of \emph{analysis}
+were laid in the nineteenth century, notably by the
+mathematicians Cauchy and Weierstrass. Central to the
+study of this subject are the formal definitions of
+\emph{limits} and \emph{continuity}.
+
+Let $D$ be a subset of $\bf R$ and let
+$f \colon D \to \mathbf{R}$ be a real-valued function on
+$D$. The function $f$ is said to be \emph{continuous} on
+$D$ if, for all $\epsilon > 0$ and for all $x \in D$,
+there exists some $\delta > 0$ (which may depend on $x$)
+such that if $y \in D$ satisfies
+\[ |y - x| < \delta \]
+then
+\[ |f(y) - f(x)| < \epsilon. \]
+
+One may readily verify that if $f$ and $g$ are continuous
+functions on $D$ then the functions $f+g$, $f-g$ and
+$f.g$ are continuous. If in addition $g$ is everywhere
+non-zero then $f/g$ is continuous.
+
+Atualmente \Hologo{TeX} é usado para a composição tipográfica de livros e textos dos mais variados conteúdos. \Hologo{TeX} é pronunciado como \emph{TEC}, já que o X ao fim da marca representa a letra grega Chi $\to \chi$, que está na raiz das palavras portuguesas tecnologia, técnica, entre outras. 
+
+\item \textbf{\Hologo{LaTeX}}: \Hologo{LaTeX} é um sistema de preparação de documentos para composição tipográfica de alta qualidade. É usado principalmente para documentos técnicos e científicos de médio e grande porte, mas pode ser utilizado para qualquer forma de publicação. O conceito central de \Hologo{LaTeX} é a separação entre conteúdo e apresentação, permitindo que o mesmo conteúdo seja apresentado em vários formatos distintos sem muita dificuldade. Assim, um texto que precisa ser apresentado no formato de uma determinada conferência ou publicação, pode ser facilmente adaptado ao formato de outra conferência ou publicação. O \Hologo{LaTeX} é um  pacote de macros \Hologo{TeX}, escrito originalmente por \href{https://en.wikipedia.org/wiki/Leslie_Lamport}{Leslie Lamport}, que provê um sistema de processamento de documentos. \Hologo{LaTeX} permite o uso de markups para descrever a estrutura de um documento, de forma que usuário não precisa se preocupar com a apresentação do documento. Ao utilizar classes de documentos e pacotes \emph{add-on}, o mesmo documento pode ser produzido em uma variedade distinta de \emph{layouts}. Lamport diz que \Hologo{LaTeX} "\emph{representa o equilíbrio entre funcionalidade e facilidade de uso}".
+O \href{https://www.latex-project.org/}{The \Hologo{LaTeX} Project} mantém a informação, distribuição código do \Hologo{LaTeX} e também gerencia o projeto de pesquisa e desenvolvimento da próxima versão do sistema, o \Hologo{LaTeX3}. 
+\item \textbf{Mac\Hologo{TeX}}: Mac\Hologo{TeX} é uma distribuição do \Hologo{LaTeX} para Mac OS. No momento da composição deste texto a distribuição mais atual era o MacTeX-2017, que requer Mac OS 10.10, Yosemite ou maior e executa em processadores Intel. O Mac\Hologo{TeX} é produzido pelo \href{http://www.tug.org/twg/mactex}{MacTexTeXnical working group} do \Hologo{TeX} Users Group (TUG). É o componente Macintosh do \Hologo{TeX} Collection DVD, a edição de referência do \Hologo{TeX} distribuída mundialmente pelo \Hologo{TeX} User Group. Além disto, a distribuição do Mac\Hologo{TeX} está disponível no \href{http://ctan.tug.org/tex-archive/systems/mac/mactex/}{CTAN}. O Mac\Hologo{TeX} possui duas partes:
+\begin{enumerate}
+\item\textbf{MacTeX-2017}: Pacote de instalação dos componentes necessários para executar \Hologo{TeX} no Mac OS X. O pacote utilizado o instalador padrão da Apple.
+\item\textbf{MacTeXtras}: Coleção de extras opcionais: \emph{Front Ends Adicionais}, \emph{Verificação de Grafia}, \emph{Documentação} e o \emph{Showcase}, com exemplos extremos de \Hologo{TeX} editados por \textbf{Gerben Wierda}.
+\end{enumerate}
+\end{enumerate}
+\subsection{Ambiente}
+Esse documento foi produzido no MacOS 10.13 (High Sierra) e Mac\Hologo{TeX} na versão de 24/05/2017. Os procedimentos descritos nesse documento não foram testados em outras plataformas. 
 \subsection{Download}
-O primeiro passo é baixar o MacTeX da página do \href{http://www.tug.org/mactex/index.html}{TeX Users Group}.
+O primeiro passo é baixar o Mac\Hologo{TeX} da página do \href{http://www.tug.org/mactex/index.html}{\Hologo{TeX} Users Group}.
 Ná página há uma referência às distribuições de Mac OS que são compatíveis, quando acessei era compatível com Mac OS 10.10 ou superior. Há duas alternativas:
 \begin{itemize}
 \item \href{http://www.tug.org/mactex/mactex-download.html}{MacTex Download}
 \item \href{http://www.tug.org/mactex/morepackages.html}{Smaller Download}.
 \end{itemize}
-A não ser que você seja um usuário experimentado do LaTeX eu recomendo que baixe o  \href{http://www.tug.org/mactex/mactex-download.html}{MacTex Download}, nessa versão estão presentes praticamente todos os utilitários e pacotes que o usuário irá precisar, sem que seja necessário baixar muita coisa depois.
+A não ser que você seja um usuário experimentado do \Hologo{TeX} eu recomendo que baixe o  \href{http://www.tug.org/mactex/mactex-download.html}{MacTex Download}, nessa versão estão presentes praticamente todos os utilitários e pacotes que o usuário irá precisar, sem que seja necessário baixar muita coisa depois.
 \subsection{Instalação}
-O processo de instalação do MacTeX é super simples: clique duas vezes no arquivo .pkg que foi baixado, no meu caso o nome era: mactex-20170524.pkg, e siga o processo de instalação com todos os defaults. O instalador, na versão que baixei, tinha as seguintes seções:
+O processo de instalação do Mac\Hologo{TeX} é super simples: clique duas vezes no arquivo .pkg que foi baixado, no meu caso o nome era: mactex-20170524.pkg, e siga o processo de instalação com todos os defaults. O instalador, na versão que baixei, tinha as seguintes seções:
 \begin{itemize}
 \item Introduction
 \item Read Me
@@ -50,26 +119,30 @@ O processo de instalação do MacTeX é super simples: clique duas vezes no arquivo
 \item Installation
 \item Summary
 \end{itemize}
-Ao fim da instalação você terá os seguintes pacotes disponíveis no Lauchpad:
+Ao fim da instalação você terá os seguintes pacotes disponíveis no Lauchpad, como mostrado no exemplo abaixo:
+
+\includegraphics[width=\textwidth]{LaunchPad}
+
 \begin{itemize}
 \item \textbf{BibDesk}: Utilitário para editar e gerenciar bibliografia. Mantém registro da informação bibliográfica e arquivos associados e links web. Para mais informações veja o site do próprio \href{https://bibdesk.sourceforge.io/}{BibDesk}.
-\item \textbf{LaTeXiT}: Utilitário desenvolvido por \href{https://www.chachatelier.fr/}{Pierre Chatelier}, que oferece uma interface gráfica sobre o LaTeX e é utilizado, principalmente, como um editor de equações. Permitindo que um usuário se concentre no código necessário para exibir a sua equação sem precisar criar um documento LaTeX completo.
-\item \textbf{TeXShop}: Utilitário de pré-visualização do LaTeX para Mac OS X. É no TeXShop que você editará seus documentos LaTeX.
-\item \textbf{TeX (Other)}: Subdiretório do Excalibur, o Spell Checker to LaTeX. Pessoalmente eu adoro o spell checker, nesse momento estou escrevendo um texto em português com algumas palavras em inglês e a grafia dos dois idiomas são verificadas em tempo real!
-\item \textbf{TeX Live Utility}: Ferramenta que gerencia uma distribuição do TeX Live, o MacTeX, no nosso caso. A principal função do TeX Live Utility é manter o seu ambiente do MacTeX atualizado. Especificamente, o Live Utility permite: \begin{itemize}
+\item \textbf{LaTeXiT}: Utilitário desenvolvido por \href{https://www.chachatelier.fr/}{Pierre Chatelier}, que oferece uma interface gráfica sobre o \Hologo{LaTeX} e é utilizado, principalmente, como um editor de equações. Permitindo que um usuário se concentre no código necessário para exibir a sua equação sem precisar criar um documento \Hologo{LaTeX} completo.
+\item \textbf{TeXShop}: Utilitário de pré-visualização do \Hologo{LaTeX} para Mac OS X. É no TeXShop que você editará seus documentos \Hologo{LaTeX}.
+\item \textbf{TeX (Other)}: Subdiretório do Excalibur, o Spell Checker to \Hologo{LaTeX}. Pessoalmente eu adoro o spell checker, nesse momento estou escrevendo um texto em português com algumas palavras em inglês e a grafia dos dois idiomas é verificada em tempo real!
+\item \textbf{TeX Live Utility}: Ferramenta que gerencia uma distribuição do TeX Live, o Mac\Hologo{TeX}, no nosso caso. A principal função do TeX Live Utility é manter o seu ambiente do Mac\Hologo{TeX} atualizado. Especificamente, o Live Utility permite: \begin{itemize}
 \item Atualizar os pacotes instalados de acordo com as últimas versões no CTAN
 \item Instalar qualquer novo pacote que apareça no CTAN desde a última atualização
 \item Mudar o tamanho global do papel para a sua distribuição
 \end{itemize}
 \end{itemize}
 \subsection{Read Me First}
-Depois de terminar a instalação do MacTeX o meu primeiro reflexo foi de buscar informações na internet sobre o MacTeX e executar os utilitários instalados. Depois de meia hora de \emph{diversão} brincando com os utilitários eu estava mais confuso que antes de instalar o MacTeX!
+Depois de terminar a instalação do Mac\Hologo{TeX} o meu primeiro reflexo foi de buscar informações na internet sobre o Mac\Hologo{TeX} e executar os utilitários instalados. Depois de meia hora de \emph{diversão} brincando com os utilitários eu estava mais confuso que antes de instalar o Mac\Hologo{TeX}!
 
-Como todo ambiente complexo, a principal dificuldade do usuário iniciante é ter a orientação correta, para não se perder na selva de aplicações que a distribuição do MacTeX oferece. Se você quer saber o que é possível fazer com o MacTeX, eu recomendo a leitura do singelo 	\href{http://www.tug.org/mactex/src/WelcomeToMacTeX.pdf}{Welcome To MacTeX}, escrito por Bob Kerstetter. Se você precisa de um tutorial, e se você é um usuário iniciante, eu tenho certeza que você precisa, então há dois documentos importantes que você deve manter como referência:
+Como todo ambiente complexo, a principal dificuldade do usuário iniciante é ter a orientação correta, para não se perder na selva de aplicações que a distribuição do Mac\Hologo{TeX} oferece. Se você quer saber o que é possível fazer com o Mac\Hologo{TeX}, eu recomendo a leitura do singelo 	\href{http://www.tug.org/mactex/src/WelcomeToMacTeX.pdf}{Welcome To Mac\Hologo{TeX}}, escrito por Bob Kerstetter. Se você precisa de um tutorial, e se você é um usuário iniciante, eu tenho certeza que você precisa, então há dois documentos importantes que você deve manter como referência:
 \begin{itemize}
-\item Read Me First: Comece por aqui! O arquivo \emph{"READ ME FIRST.pdf"} está na pasta do TeX dentro do diretório Applications.
-\item \href{http://ftp.math.purdue.edu/mirrors/ctan.org/info/gentle/gentle.pdf}{A Gentle Introduction to TeX}: Manual de auto-estudo do TeX, escrito por Michael Doob, do departamento de matemática da Universidade de Manitoba.
+\item Read Me First: Comece por aqui! O arquivo \emph{"READ ME FIRST.pdf"} está na pasta do \Hologo{TeX} dentro do diretório Applications.
+\item \href{http://ftp.math.purdue.edu/mirrors/ctan.org/info/gentle/gentle.pdf}{A Gentle Introduction to \Hologo{TeX}}: Manual de auto-estudo do \Hologo{TeX}, escrito por Michael Doob, do departamento de matemática da Universidade de Manitoba.
 \end{itemize}
-O \emph{"READ ME FIRST.pdf"} vai mostrar a porta de entrada do MacTeX e ajudar no aprendizado da utilização do sistema.
+O \emph{"READ ME FIRST.pdf"} vai mostrar a porta de entrada do Mac\Hologo{TeX} e ajudar no aprendizado da utilização do sistema.
 \section{TeXShop - Dicas, truques e quebra-galhos}
+O primeiro passo com arquivos \Hologo{TeX}
 \end{document}
