@@ -37,7 +37,7 @@ Antes de começar, vamos ver as definições de alguns dos termos que usaremos com 
 \begin{enumerate}
 \item \textbf{\Hologo{TeX}}: \Hologo{TeX} é o sistema de composição tipográfica desenvolvido por \href{http://sunburn.stanford.edu/~knuth/}{Donand E. Knuth}, que diz, no prefácio do seu livro sobre \Hologo{TeX} (veja na seção referências), que "\emph{\Hologo{TeX} tem o objetivo de criar livros bonitos - especialmente livros que contém muita matemática}". Knuth desenvolveu a primeira versão do \Hologo{TeX} em 1978 para gerenciar as revisões da sua série \emph{"the Art of Computer Programming"}. A ideia mostrou-se popular e Knuth produziu uma segunda versão, em 1982, que é a base do que se usa atualmente.
 \Hologo{TeX} é um macro processador, que oferece aos seus usuários funcionalidades poderosas de programação. Para compor um documento, mescla-se macros e texto e as macros definem um ambiente onde as regras de publicação do texto são produzidas. O motor do \Hologo{TeX} básico é de difícil uso e aprendizado. Reconhecendo esta deficiência (e não querendo escrever as mesmas definições no início de cada documento) Donald Knuth criou um pacote de macros para serem usadas com \Hologo{TeX}, chamada de \emph{Plain \Hologo{TeX}}. Assim Plain \Hologo{TeX} é um conjunto mínimo de macros que podem ser usadas com o \Hologo{TeX}. Quando alguém diz que está "\emph{escrevendo (ou programando) em \Hologo{TeX}}", o que se quer dizer, na verdade, é que estão programando em Plain \Hologo{TeX}.
-Então, \Hologo{TeX} é um pré-processador de texto, que tem como entradas arquivos de texto com extensão .tex, e utiliza macros e comandos para gerar a composição tipográfica do texto. Abaixo vemos um exemplo de arquivo \Hologo{TeX} retirado de \href{http://www.maths.tcd.ie/~dwilkins/LaTeXPrimer/}{\emph{Getting Started with LaTeX}}, escrito pelo \href{https://www.maths.tcd.ie/~dwilkins/}{Dr. David R. Wilkins}, professor de matemática do Trinity College Dublin.
+Então, \Hologo{TeX} é um pré-processador de texto, que tem como entradas arquivos de texto com extensão .tex, e utiliza macros e comandos para gerar a composição tipográfica do texto. Abaixo vemos um exemplo de arquivo \Hologo{TeX} (na verdade \Hologo{LaTeX}, mas a diferença não é relevante nesse momento) retirado de \href{http://www.maths.tcd.ie/~dwilkins/LaTeXPrimer/}{\emph{Getting Started with LaTeX}}, escrito pelo \href{https://www.maths.tcd.ie/~dwilkins/}{Dr. David R. Wilkins}, professor de matemática do Trinity College Dublin.
 \begin{verbatim}
 \documentclass[a4paper,12pt]{article}
 \begin{document}
@@ -144,5 +144,67 @@ Como todo ambiente complexo, a principal dificuldade do usuário iniciante é ter 
 \end{itemize}
 O \emph{"READ ME FIRST.pdf"} vai mostrar a porta de entrada do Mac\Hologo{TeX} e ajudar no aprendizado da utilização do sistema.
 \section{TeXShop - Dicas, truques e quebra-galhos}
-O primeiro passo com arquivos \Hologo{TeX}
+O que vamos descrever a seguir baseia-se parcialmente no \textbf{READ ME First.pdf} do Mac\Hologo{TeX}, mas incluímos informações que não constam naquele tutorial, seja porque são específicas do idioma português, ou seja porque não estão nos temas cobertos pelo  \textbf{READ ME First.pdf}. De qualquer forma, recomendo a sua leitura!
+
+O primeiro passo ao usar o Mac\Hologo{TeX} é criar um novo documento \Hologo{TeX}. Execute as etapas à seguir:
+\begin{enumerate}
+\item Vá até o LaunchPad e execute o comando TeXShop, se necessário, busque o comando, como mostrado na figura a seguir. 
+
+\includegraphics[scale=0.35]{TeXShop}
+\item Você verá uma tela em branco do TeXShop.
+
+\includegraphics[width=\textwidth]{TeXShopBlank}
+\item Clique em \emph{Templates} e selecione LatexTemplate
+\item Você terá na tela um documento com o conteúdo similar ao abaixo:
+
+\includegraphics[width=\textwidth]{TeXShopLatexTemplate}
+\item As linhas em vermelho são comentários que o \Hologo{TeX} ignora. Agora você precisa editar o conteúdo, que está entre as linhas
+\begin{verbatim}
+\begin{document}
+\end{verbatim}
+e
+\begin{verbatim}
+\end{document}
+\end{verbatim}
+\item Edite o campo
+\begin{verbatim}
+\title{Brief Article}
+\end{verbatim}
+e mude para
+\begin{verbatim}
+\title{Alô mundo}
+\end{verbatim}
+Coloque o seu nome no lugar de The Author em:
+\begin{verbatim}
+\author{The Author}
+\end{verbatim}
+E depois de 
+\begin{verbatim}
+\begin{document}
+\maketitle
+%\section{}
+%\subsection{}
+\end{verbatim}
+escreva
+\begin{verbatim}
+Alô mundo!
+\end{verbatim}
+Depois disto clique em \emph{Typeset}. O TeXShop cria vários arquivos quando é selecionada a opção Typeset, nesse momento você será apresentado com um diálogo para salvar a sua página em algum lugar para que os arquivos possam ser gerados, como mostrado na figura abaixo.
+
+\includegraphics[width=\textwidth]{TeXShopSaveAs}
+\item Mude o nome do arquivo para AloMundo, escolha um diretório adequado para o documento (como cada documento é na verdade um conjunto de arquivos, é melhor deixar cada documento \Hologo{TeX} na sua própria pasta) e clique em \emph{Save}.
+\item Se você fez tudo certo, você terá nesse momento o seu primeiro documento \Hologo{LaTeX}! E ele estará grandiosamente errado, como você verá na página do Typeset (que é o seu conteúdo publicado em PDF!). O texto \emph{"Alô"} é publicado como \emph{"Al"}. Os acentos não são mostrados corretamente!
+
+\includegraphics[width=\textwidth]{AloMundo}
+\item Volte à janela do TeXShop, e logo antes de:
+\begin{verbatim}
+%SetFonts
+\end{verbatim}
+digite
+\begin{verbatim}
+\usepackage[brazilian]{babel}
+\usepackage[T1]{fontenc}	
+\end{verbatim}
+\item Clique outra vez em \emph{Typeset} e voilà, você tem seu primeiro documento \Hologo{LaTeX} correto!
+\end{enumerate}
 \end{document}
