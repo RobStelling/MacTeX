@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  25 JAN 2018 11:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  25 JAN 2018 12:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -9,8 +9,8 @@ LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2017/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -230,23 +230,52 @@ Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-(./Tutorial MacTeX.aux)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/datetime2/datetime2.sty
+Package: datetime2 2016/07/12 v1.5.2 (NLCT) date and time formats
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tracklang/tracklang.sty
+Package: tracklang 2017/03/25 v1.3.4 (NLCT) Track Languages
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/tracklang/tracklang.tex))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count102
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks17
+\XKV@tempa@toks=\toks18
+)
+\XKV@depth=\count103
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/datetime2-portuges/datetime2-port
+uges.ldf
+File: datetime2-portuges.ldf 2015/03/28 v1.0
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/datetime2-portuges/datetime2-port
+uges-ascii.ldf
+File: datetime2-portuges-ascii.ldf 2015/03/28 v1.0
+))) (./Tutorial MacTeX.aux)
 \openout1 = `"Tutorial MacTeX.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -267,12 +296,12 @@ LaTeX Font Info:    ... okay on input line 27.
 * \topmargin=-13.87262pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=11.0pt
+* \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=59.0pt
-* \marginparsep=10.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -284,17 +313,17 @@ LaTeX Font Info:    ... okay on input line 27.
 
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count102
+\scratchcounter=\count104
 \scratchdimen=\dimen118
 \scratchbox=\box26
-\nofMPsegments=\count103
-\nofMParguments=\count104
-\everyMPshowfont=\toks17
-\MPscratchCnt=\count105
+\nofMPsegments=\count105
+\nofMParguments=\count106
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count107
 \MPscratchDim=\dimen119
-\MPnumerator=\count106
-\makeMPintoPDFobject=\count107
-\everyMPtoPDFconversion=\toks18
+\MPnumerator=\count108
+\makeMPintoPDFobject=\count109
+\everyMPtoPDFconversion=\toks20
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -313,7 +342,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box27
-Package hyperref Info: Link coloring OFF on input line 27.
+Package hyperref Info: Link coloring OFF on input line 28.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -321,11 +350,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count108
+\c@section@level=\count110
 )
-LaTeX Info: Redefining \ref on input line 27.
-LaTeX Info: Redefining \pageref on input line 27.
-LaTeX Info: Redefining \nameref on input line 27.
+LaTeX Info: Redefining \ref on input line 28.
+LaTeX Info: Redefining \pageref on input line 28.
+LaTeX Info: Redefining \nameref on input line 28.
 
 (./Tutorial MacTeX.out) (./Tutorial MacTeX.out)
 \@outlinefile=\write3
@@ -334,17 +363,17 @@ LaTeX Info: Redefining \nameref on input line 27.
  [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for U+msa on input line 48.
+LaTeX Font Info:    Try loading font information for U+msa on input line 49.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 48.
+LaTeX Font Info:    Try loading font information for U+msb on input line 49.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 49.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 50.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -352,131 +381,126 @@ File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.75 \end{verbatim}
-                    [1] [2] [3]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 117.
+l.76 \end{verbatim}
+                    [1] [2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 118.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 117.
-
-<imagens/LaunchPad.png, id=97, 1242.6425pt x 392.46625pt>
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 118.
+ [3]
+<imagens/LaunchPad.png, id=99, 1242.6425pt x 392.46625pt>
 File: imagens/LaunchPad.png Graphic file (type png)
 
 <use imagens/LaunchPad.png>
-Package pdftex.def Info: imagens/LaunchPad.png used on input line 133.
+Package pdftex.def Info: imagens/LaunchPad.png used on input line 134.
 (pdftex.def)             Requested size: 430.00462pt x 135.80821pt.
+ [4 <./imagens/LaunchPad.png>]
+<imagens/TeXShop.png, id=112, 275.0275pt x 204.765pt>
+File: imagens/TeXShop.png Graphic file (type png)
+
+<use imagens/TeXShop.png>
+Package pdftex.def Info: imagens/TeXShop.png used on input line 166.
+(pdftex.def)             Requested size: 137.51341pt x 102.38223pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[4]
-Overfull \hbox (3.6892pt too wide) in paragraph at lines 143--143
-[]\T1/cmr/bx/n/10.95 TeX Live Uti-lity\T1/cmr/m/n/10.95 : Fer-ra-menta que ge-r
-en-cia uma dis-tri-bui-ção do TeX Live, o MacT[]X,
- []
-
-[5 <./imagens/LaunchPad.png>]
-<imagens/TeXShop.png, id=114, 275.0275pt x 204.765pt>
-File: imagens/TeXShop.png Graphic file (type png)
-
-<use imagens/TeXShop.png>
-Package pdftex.def Info: imagens/TeXShop.png used on input line 165.
-(pdftex.def)             Requested size: 137.51341pt x 102.38223pt.
- [6 <./imagens/TeXShop.png>]
-<imagens/TeXShopBlank.png, id=123, 798.985pt x 216.81pt>
+<imagens/TeXShopBlank.png, id=114, 798.985pt x 216.81pt>
 File: imagens/TeXShopBlank.png Graphic file (type png)
 
 <use imagens/TeXShopBlank.png>
-Package pdftex.def Info: imagens/TeXShopBlank.png used on input line 175.
+Package pdftex.def Info: imagens/TeXShopBlank.png used on input line 176.
 (pdftex.def)             Requested size: 430.00462pt x 116.68527pt.
 
-<imagens/TeXShopLatexTemplate.png, id=125, 792.9625pt x 468.75125pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<imagens/TeXShopLatexTemplate.png, id=116, 792.9625pt x 468.75125pt>
 File: imagens/TeXShopLatexTemplate.png Graphic file (type png)
 
 <use imagens/TeXShopLatexTemplate.png>
 Package pdftex.def Info: imagens/TeXShopLatexTemplate.png used on input line 18
-2.
+3.
 (pdftex.def)             Requested size: 430.00462pt x 254.19478pt.
-
+ [5]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7 <./imagens/TeXShopBlank.png>]
-<imagens/TeXShopSaveAs.png, id=141, 790.955pt x 461.725pt>
+[6 <./imagens/TeXShop.png> <./imagens/TeXShopBlank.png>]
+<imagens/TeXShopSaveAs.png, id=139, 790.955pt x 461.725pt>
 File: imagens/TeXShopSaveAs.png Graphic file (type png)
 
 <use imagens/TeXShopSaveAs.png>
-Package pdftex.def Info: imagens/TeXShopSaveAs.png used on input line 220.
+Package pdftex.def Info: imagens/TeXShopSaveAs.png used on input line 221.
 (pdftex.def)             Requested size: 430.00462pt x 251.01868pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imagens/AloMundo.png, id=143, 627.34375pt x 344.28625pt>
+<imagens/AloMundo.png, id=141, 627.34375pt x 344.28625pt>
 File: imagens/AloMundo.png Graphic file (type png)
 
 <use imagens/AloMundo.png>
-Package pdftex.def Info: imagens/AloMundo.png used on input line 228.
+Package pdftex.def Info: imagens/AloMundo.png used on input line 229.
 (pdftex.def)             Requested size: 430.00462pt x 235.99751pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[8 <./imagens/TeXShopLatexTemplate.png>] [9 <./imagens/TeXShopSaveAs.png>]
-[10 <./imagens/AloMundo.png>] [11] [12]
-Overfull \hbox (31.58278pt too wide) in paragraph at lines 368--369
-\T1/cmr/m/n/10.95 pode ser in-te-res-sante man-ter a \T1/cmr/m/it/10.95 URL \T1
-/cmr/m/n/10.95 e o \T1/cmr/m/it/10.95 Texto \T1/cmr/m/n/10.95 iguais! Por exem-
-plo: []http://www.google.com/[] 
+[7 <./imagens/TeXShopLatexTemplate.png>] [8 <./imagens/TeXShopSaveAs.png>]
+[9 <./imagens/AloMundo.png>] [10]
+Overfull \hbox (2.38786pt too wide) in paragraph at lines 348--349
+\T1/cmr/m/n/10 ção. Essa re-fe-rên-cia foi cri-ada com o co-mando \T1/cmtt/m/n/
+10 \section{Referência rápida de comandos} 
  []
 
-
-Overfull \hbox (39.64017pt too wide) in paragraph at lines 395--395
-[]\T1/cmtt/m/n/10.95 Para usar dentro do texto do documento os sete primeiros p
-odem ser precedidos de \:[] 
+[11]
+Overfull \hbox (5.63899pt too wide) in paragraph at lines 396--396
+[]\T1/cmtt/m/n/10 Para usar dentro do texto do documento os sete primeiros pode
+m ser precedidos de \:[] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 402.
-[13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 402.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 403.
+[12]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 403.
  (./Tutorial MacTeX.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 402.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 402.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 403.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 403.
 Package rerunfilecheck Info: File `"Tutorial MacTeX".out' has not changed.
 (rerunfilecheck)             Checksum: E35B1EF7D2E9E434EC6BD6895715608A;653.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 402.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 403.
  ) 
 Here is how much of TeX's memory you used:
- 6923 strings out of 492995
- 101398 string characters out of 6132704
- 204522 words of memory out of 5000000
- 10331 multiletter control sequences out of 15000+600000
- 17079 words of font info for 46 fonts, out of 8000000 for 9000
+ 9795 strings out of 492995
+ 164907 string characters out of 6132704
+ 266873 words of memory out of 5000000
+ 13171 multiletter control sequences out of 15000+600000
+ 14120 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,6n,34p,1304b,538s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 33i,6n,37p,1304b,539s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
 /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
 usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
 r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
-/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb></usr/l
-ocal/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/loc
+/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx0700.pfb></usr/l
+ocal/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/loc
 al/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local
 /texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/t
-exlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/tex
-live/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texli
+exlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/tex
+live/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texli
 ve/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive
-/2017/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2
+/2017/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2
 017/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/201
-7/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on "Tutorial MacTeX.pdf" (14 pages, 1292737 bytes).
+7/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on "Tutorial MacTeX.pdf" (13 pages, 1279198 bytes).
 PDF statistics:
- 250 PDF objects out of 1000 (max. 8388607)
- 205 compressed objects within 3 object streams
- 55 named destinations out of 1000 (max. 500000)
+ 247 PDF objects out of 1000 (max. 8388607)
+ 203 compressed objects within 3 object streams
+ 54 named destinations out of 1000 (max. 500000)
  119 words of extra memory for PDF output out of 10000 (max. 10000000)
 
