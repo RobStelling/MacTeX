@@ -100,11 +100,13 @@ Atualmente \Hologo{TeX} é usado para a composição tipográfica de livros e textos
 
 \item \textbf{\Hologo{LaTeX}}: \Hologo{LaTeX} é um sistema de preparação de documentos para composição tipográfica de alta qualidade. É usado principalmente para documentos técnicos e científicos de médio e grande porte, mas pode ser utilizado para qualquer forma de publicação. O conceito central de \Hologo{LaTeX} é a separação entre conteúdo e apresentação, permitindo que o mesmo conteúdo seja apresentado em vários formatos distintos sem muita dificuldade. Assim, um texto que precisa ser apresentado no formato de uma determinada conferência ou publicação, pode ser facilmente adaptado ao formato de outra conferência ou publicação. O \Hologo{LaTeX} é um  pacote de macros \Hologo{TeX}, escrito originalmente por \href{https://en.wikipedia.org/wiki/Leslie_Lamport}{Leslie Lamport}, que provê um sistema de processamento de documentos. \Hologo{LaTeX} permite o uso de markups para descrever a estrutura de um documento, de forma que usuário não precisa se preocupar com a apresentação do documento. Ao utilizar classes de documentos e pacotes \emph{add-on}, o mesmo documento pode ser produzido em uma variedade distinta de \emph{layouts}. Lamport diz que \Hologo{LaTeX} "\emph{representa o equilíbrio entre funcionalidade e facilidade de uso}".
 O \href{https://www.latex-project.org/}{The \Hologo{LaTeX} Project} mantém a informação, distribuição código do \Hologo{LaTeX} e também gerencia o projeto de pesquisa e desenvolvimento da próxima versão do sistema, o \Hologo{LaTeX3}. 
-\item \textbf{Mac\Hologo{TeX}}: Mac\Hologo{TeX} é uma distribuição do \Hologo{LaTeX} para Mac OS. No momento da composição deste texto a distribuição mais atual era o MacTeX-2017, que requer Mac OS 10.10, Yosemite ou maior e executa em processadores Intel. O Mac\Hologo{TeX} é produzido pelo \href{http://www.tug.org/twg/mactex}{MacTexTeXnical working group} do \Hologo{TeX} Users Group (TUG). É o componente Macintosh do \Hologo{TeX} Collection DVD, a edição de referência do \Hologo{TeX} distribuída mundialmente pelo \Hologo{TeX} User Group. Além disto, a distribuição do Mac\Hologo{TeX} está disponível no \href{http://ctan.tug.org/tex-archive/systems/mac/mactex/}{CTAN}. O Mac\Hologo{TeX} possui duas partes:
+\item \textbf{Mac\Hologo{TeX}}: Mac\Hologo{TeX} é uma distribuição do \Hologo{LaTeX} para Mac OS. No momento da composição deste texto a distribuição mais atual era o MacTeX-2017, que requer Mac OS 10.10, Yosemite ou maior e executa em processadores Intel. O Mac\Hologo{TeX} é produzido pelo \href{http://www.tug.org/twg/mactex}{Mac\Hologo{TeX} Technical Working Group} do \Hologo{TeX} Users Group (TUG). É o componente Macintosh do \Hologo{TeX} Collection DVD, a edição de referência do \Hologo{TeX} distribuída mundialmente pelo \Hologo{TeX} User Group. Além disto, a distribuição do Mac\Hologo{TeX} está disponível no \href{http://ctan.tug.org/tex-archive/systems/mac/mactex/}{CTAN}. O Mac\Hologo{TeX} possui duas partes:
 \begin{enumerate}
 \item\textbf{MacTeX-2017}: Pacote de instalação dos componentes necessários para executar \Hologo{TeX} no Mac OS X. O pacote utilizado o instalador padrão da Apple.
 \item\textbf{MacTeXtras}: Coleção de extras opcionais: \emph{Front Ends Adicionais}, \emph{Verificação de Grafia}, \emph{Documentação} e o \emph{Showcase}, com exemplos extremos de \Hologo{TeX} editados por \textbf{Gerben Wierda}.
 \end{enumerate}
+\item \textbf{Preâmbulo}: Documentos \Hologo{LaTeX} são divididos em preâmbulo e texto do documento. É a parte inicial do documento que vai da linha \textbf{\textbackslash documentclass\{class\}} até a linha \textbf{\textbackslash begin\{document\}}.
+\item \textbf{Texto do documento}: É o conteúdo do seu documento \Hologo{LaTeX}, que vai da linha \textbf{\textbackslash begin\{document\}} até a linha \textbf{\textbackslash end\{document\}}.
 \end{enumerate}
 \subsection{Ambiente}
 Esse documento foi produzido no MacOS 10.13 (High Sierra) e Mac\Hologo{TeX} na versão de 24/05/2017. Os procedimentos descritos nesse documento não foram testados em outras plataformas. 
@@ -182,7 +184,7 @@ O primeiro passo ao usar o Mac\Hologo{TeX} é criar um novo documento \Hologo{TeX
 \label{fig:LatexTemplate}
 \end{figure}
 \item Você verá um documento \Hologo{LaTeX} com o conteúdo similar à Figura \ref{fig:LatexTemplate}:
-\item As linhas em vermelho são comentários que o \Hologo{TeX} ignora. Agora você precisa editar o conteúdo, que está entre as linhas
+\item As linhas em vermelho são comentários que o \Hologo{TeX} ignora. O conteúdo do seu texto fica entre as linhas
 \begin{verbatim}
 \begin{document}
 \end{verbatim}
@@ -213,7 +215,7 @@ escreva
 \begin{verbatim}
 Alô mundo!
 \end{verbatim}
-Depois disto clique em \emph{Typeset}. O TeXShop cria vários arquivos quando é selecionada a opção Typeset, nesse momento você será apresentado com um diálogo para salvar a sua página em algum lugar para que os arquivos possam ser gerados, como mostrado na Figura \ref{fig:SalvaDoc}.
+Depois disto clique em \emph{Typeset}. O TeXShop cria vários arquivos quando é selecionada a opção Typeset, nesse momento você será apresentado com uma caixa de diálogo para salvar a sua página em algum lugar para que os arquivos possam ser gerados, como mostrado na Figura \ref{fig:SalvaDoc}.
 \begin{figure}[h!]
 \includegraphics[width=\textwidth]{TeXShopSaveAs}
 \caption{Salvando o documento criado}
@@ -239,7 +241,7 @@ digite
 A primeira linha inclui o português brasileiro como texto de entrada. A segunda linha determina a codificação da fonte com 8 bits, o que permite a utilização, sem problemas, de caracteres acentuados, entre outros.
 \item Clique outra vez em \emph{Typeset} e voilà, você compôs seu primeiro documento \Hologo{LaTeX} correto!
 \end{enumerate}
-A partir deste ponto você pode, e deve, modificar o seu texto e clicar em \emph{Typeset} a qualquer momento que você queira ver como o texto está. A junção do \Hologo{LaTeX} com TeXShop e a funcionalidade de \emph{Typeset} facilitam brutalmente o uso do \Hologo{TeX} e a curva de aprendizado do sistema de composição tipográfica.
+A partir deste ponto você pode, e deve, modificar o seu texto e clicar em \emph{Typeset} a qualquer momento que você queira ver como o texto está. A junção do \Hologo{LaTeX} com TeXShop e a funcionalidade de \emph{Typeset} facilitam enormemente o uso do \Hologo{LaTeX} e aceleram a curva de aprendizado desse sistema de composição tipográfica.
 \subsection{Próximos passos}
 É fácil executar as tarefas mais comuns no TeXShop, então não vou entrar em detalhes de como abrir um arquivo recente, por exemplo. Por outro lado há funções poderosas de macros e Typeset que estão além do objetivo deste texto. No \emph{Help} TeXShop há vários recursos importantes, que valem a leitura:
 \begin{itemize}
@@ -259,6 +261,7 @@ A partir deste ponto você pode, e deve, modificar o seu texto e clicar em \emph{
 \textit{texto}
 \end{verbatim}
 \textit{Deixa o texto em itálico.}
+
 \begin{verbatim}
 \textbf{texto}
 \end{verbatim}
@@ -267,10 +270,12 @@ A partir deste ponto você pode, e deve, modificar o seu texto e clicar em \emph{
 \underline{texto}
 \end{verbatim}
 \underline{Sublinha o texto.}
+
 \begin{verbatim}
 \par
 \end{verbatim}
 Inicia um novo\par parágrafo. Tem o mesmo efeito que deixar uma linha em branco entre duas linhas do texto de entrada.
+
 \begin{verbatim}
 \begin{flushleft}
 texto
@@ -279,6 +284,7 @@ texto
 \begin{flushleft}
 Por padrão o LaTeX mantém o texto totalmente justificado, nas duas margens, o uso de flushleft força a justificação à esquerda.
 \end{flushleft}
+
 \begin{verbatim}
 \begin{flushright}
 texto
@@ -287,11 +293,110 @@ texto
 \begin{flushright}
 Por padrão o LaTeX mantém o texto totalmente justificado, nas duas margens, o uso de flushright força a justificação à direita.
 \end{flushright}
+
 \begin{verbatim}
 \begin{center}
 texto
 \end{center}
 \end{verbatim}
 \begin{center}Centraliza o texto (ou imagem)\end{center}
+
+\begin{verbatim}
+\begin{itemize}
+\item Primeiro texto
+\item Segundo texto
+\end{itemize}
+\end{verbatim}
+Cria listas de texto, com marcadores, sem numeração
+\begin{itemize}
+\item Primeiro texto
+\item Segundo texto
+\item É possível criar listas de texto dentro de listas de texto
+\begin{itemize}
+\item E o \Hologo{LaTeX} gera a indentação automaticamente
+\end{itemize}
+\end{itemize}
+
+\begin{verbatim}
+\begin{enumerate}
+\item Primeiro texto
+\item Segundo texto
+\end{enumerate}
+\end{verbatim}
+Cria listas numeradas de texto
+\begin{enumerate}
+\item Primeiro texto
+\item Segundo texto
+\item É possível criar listas numeradas de texto dentro de listas numeradas
+\begin{enumerate}
+\item E a numeração é automática
+\item E ainda é possível criar listas sem numeração dentro de listas de numeração
+\begin{itemize}
+\item E dentro de listas sem numeração, criar listas com numeração!
+\begin{enumerate}
+\item E o \Hologo{LaTeX} continua controlando a numeração
+\item Automaticamente
+\end{enumerate}
+\end{itemize}
+\end{enumerate}
+\end{enumerate}
+
+\begin{verbatim}
+\section{Título da seção}
+\end{verbatim}
+Inicia uma nova seção do texto, com o título determinado e atribuindo um número automático de seção. Essa referência foi criada com o comando \texttt{\textbackslash section\{Referência rápida de comandos\}}
+
+\begin{verbatim}
+\subsection{Título da sub-seção}
+\end{verbatim}
+Inicia uma nova sub-seção de texto, com o título determinado e atribuindo um número automático para a sub-seção. A sub-seção \textbf{3.1 Dicas, truques e quebra-galhos} foi criada desta forma: \texttt{\textbackslash subsection\{Dicas, truques e quebra-galhos\}}.
+
+\begin{verbatim}
+No preâmbulo:
+\usepackage[brazilian]{babel}
+\usepackage[T1]{fontenc}
+\end{verbatim}
+Define que o idioma português brasileiro será utilizado e seleciona codificação de caracteres de 8 bits, que inclui os caracteres acentuados do português. A codificação padrão do \Hologo{LaTeX} é de 7 bits e não inclui caracteres acentuados. Apesar de não ser necessário em textos em inglês, é considerado uma boa prática incluir a linha \texttt{\textbackslash usepackage[T1]\{fontenc\}} nos documentos \Hologo{LaTeX}.
+
+\begin{verbatim}
+No preâmbulo:
+\usepackage{hyperref} 
+
+No texto do documento:
+\href{URL}{Texto}
+\end{verbatim}
+Inclui uma URL no texto gerado. Lembre-se que se o seu texto pode ser impresso, então pode ser interessante manter a \emph{URL} e o \emph{Texto} iguais! Por exemplo: \href{http://www.google.com/}{http://www.google.com/}
+
+\begin{verbatim}
+No preâmbulo:
+\usepackage{graphicx}		
+\graphicspath{ {NomeDaPasta/} }
+
+No texto do documento:
+\includegraphics[width=\textwidth]{NomeImagemSemExtesão}
+\end{verbatim}
+Inclui a imagem no texto. O nome da pasta deve ser relativa ao diretório onde está o arquivo \textbf{.tex}. É recomendável criar uma pasta para as imagens, dentro da pasta onde está o seu documento \Hologo{LaTeX}. A imagem pode ser pdf, png ou jpg. Se você utilizar o pacote pdflatex então a imagem também pode ser eps. 
+O comando \texttt{\textbackslash includegraphics} tem uma grande variedade de opções. Recomendo como referência a seção \href{https://en.wikibooks.org/wiki/LaTeX/Importing_Graphics}{LaTeX/Importing Graphics} do Wikibooks. No exemplo acima utilizamos a opção \texttt{[width=\textbackslash textwidth]}, que reproduz a imagem no tamanho do texto disponível.
+
+\begin{verbatim}
+No preâmbulo:
+\usepackage[parfill]{parskip}
+\end{verbatim}
+Ativa um novo parágrafo como uma linha em branco, ao invés de uma linha indentada. É como este texto foi gerado. 
+
+\begin{verbatim}
+Caracteres com significado especial no LaTeX:
+& % $ # _ { } ~ ^ \
+
+Para usar dentro do texto do documento os sete primeiros podem ser precedidos de \:
+\& \% \$ \# \_ \{ \}
+Os outros três devem ser descritos explicitamente:
+\textasciitilde \textasciicircum \textbackslash
+\end{verbatim}
+Como fizemos abaixo:\par
+\& \% \$ \# \_ \{ \} \textasciitilde \textasciicircum \textbackslash
+
+\begin{verbatim}
+\end{verbatim}
 
 \end{document}
