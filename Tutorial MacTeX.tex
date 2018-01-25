@@ -16,6 +16,8 @@
 \usepackage[T1]{fontenc}				% And accented characters
 
 \usepackage[brazilian]{datetime2}
+
+\usepackage[normalem]{ulem}
 %SetFonts
 
 %SetFonts
@@ -40,6 +42,7 @@
 \end{titlepage}
 \section{Introdução}
 O objetivo deste texto é servir de referência à minha própria trajetória no aprendizado do \Hologo{TeX} e do Mac\Hologo{TeX}, servindo como um notebook de consulta rápida. O texto não tem a pretensão de ser um manual ou tutorial de \Hologo{TeX} e Mac\Hologo{TeX}, mas é bem provável que ajude à quem vier utilizar o Mac\Hologo{TeX} no MacOS pela primeira vez.
+\pagebreak[0]
 \section{Primeiros passos}
 \subsection{Conceitos e definições}
 Antes de começar, vamos ver as definições de alguns dos termos que usaremos com frequência nesse texto:
@@ -156,6 +159,7 @@ Como todo ambiente complexo, a principal dificuldade do usuário iniciante é ter 
 \item \href{http://ftp.math.purdue.edu/mirrors/ctan.org/info/gentle/gentle.pdf}{A Gentle Introduction to \Hologo{TeX}}: Manual de auto-estudo do \Hologo{TeX}, escrito por Michael Doob, do departamento de matemática da Universidade de Manitoba.
 \end{itemize}
 O \emph{"READ ME FIRST.pdf"} vai mostrar a porta de entrada do Mac\Hologo{TeX} e ajudar no aprendizado da utilização do sistema.
+\pagebreak[3]
 \section{TeXShop}
 \subsection{Dicas, truques e quebra-galhos}
 
@@ -253,6 +257,7 @@ A partir deste ponto você pode, e deve, modificar o seu texto e clicar em \emph{
 \item First Steps with Mathematical Typesetting
 \item George Grätzer's Short Course
 \end{itemize}
+\pagebreak[3]
 \section{Referência rápida de comandos}
 \begin{verbatim}
 \emph{texto}
@@ -374,7 +379,7 @@ No preâmbulo:
 \graphicspath{ {NomeDaPasta/} }
 
 No texto do documento:
-\includegraphics[width=\textwidth]{NomeImagemSemExtesão}
+\includegraphics[width=\textwidth]{NomeImagemSemExtensão}
 \end{verbatim}
 Inclui a imagem no texto. O nome da pasta deve ser relativa ao diretório onde está o arquivo \textbf{.tex}. É recomendável criar uma pasta para as imagens, dentro da pasta onde está o seu documento \Hologo{LaTeX}. A imagem pode ser pdf, png ou jpg. Se você utilizar o pacote pdflatex então a imagem também pode ser eps. 
 O comando \texttt{\textbackslash includegraphics} tem uma grande variedade de opções. Recomendo como referência a seção \href{https://en.wikibooks.org/wiki/LaTeX/Importing_Graphics}{LaTeX/Importing Graphics} do Wikibooks. No exemplo acima utilizamos a opção \texttt{[width=\textbackslash textwidth]}, que reproduz a imagem no tamanho do texto disponível.
@@ -389,7 +394,8 @@ Ativa um novo parágrafo como uma linha em branco, ao invés de uma linha indentad
 Caracteres com significado especial no LaTeX:
 & % $ # _ { } ~ ^ \
 
-Para usar dentro do texto do documento os sete primeiros podem ser precedidos de \:
+Para usar dentro do texto do documento os sete primeiros caracteres da lista
+acima devem ser precedidos de \:
 \& \% \$ \# \_ \{ \}
 Os outros três devem ser descritos explicitamente:
 \textasciitilde \textasciicircum \textbackslash
@@ -398,6 +404,31 @@ Como fizemos abaixo:\par
 \& \% \$ \# \_ \{ \} \textasciitilde \textasciicircum \textbackslash
 
 \begin{verbatim}
+\verb|texto verbatim|
+\texttt{texto true type}
 \end{verbatim}
+O comando \texttt{\textbackslash verb|texto|} cria trechos de texto em verbatim, que pode conter caracteres especiais, como por exemplo \verb|\begin|.\par
+O comando \verb|\texttt{texto}| cria trecho de texto true-type, mas caracteres especiais são interpretados. Embora os dois comandos sejam similares, o fato de caracteres especiais serem interpretados em um mas não no outro faz com que cada um seja mais adequado em uma situação particular que o outro.
 
+\verb|\begin{verbatim}|\par
+\verb|Texto em verbatim, que pode conter várias linhas|\par
+\verb|\end{verbatim}|\par
+Cria um trecho, de várias linhas, em verbatim, que pode conter caracteres especiais. Adequado para trechos de código fonte.
+\begin{verbatim}
+No preâmbulo:
+\usepackage[normalem]{ulem}
+
+No texto do documento:
+\sout{StrikeOut}
+\xout{Remover}
+\dashuline{Sublinhado Tracejado}
+\uwave{Ondulado}
+\dotuline{Pontilhado}
+\end{verbatim}
+Gera texto \sout{strikeout}, \xout{removido} e sublinhados \dashuline{tracejados}, \uwave{ondulados} e \dotuline{pontilhados}. É importante usar a opção \verb|[normalem]| para não modificar o comando \verb|\emph|! Para mais detalhes veja a documentação do pacote \href{https://ctan.org/pkg/ulem}{ulem}.
+O pacote \href{https://ctan.org/pkg/soul}{soul} oferece funcionalidade similar, e o pacote \href{https://ctan.org/pkg/soulutf8}{soulutf8} possui algum suporte a UTF-8.
+\begin{verbatim}
+Page break
+\end{verbatim}
+Page break é um tema interessante e o manual do Latex talvez deixe passar alguns detalhes. No Web Archive há a cópia de uma página com um ótimo tutorial sobre page break: \href{https://web.archive.org/web/20100622022829/http://help-csli.stanford.edu/tex/latex-pagebreaks.shtml}{Latex Pagebreaks}
 \end{document}
