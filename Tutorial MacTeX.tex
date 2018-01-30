@@ -20,9 +20,6 @@
 \usepackage[normalem]{ulem}
 %SetFonts
 
-%SetFonts
-
-
 \title{Introdução ao Mac\Hologo{TeX}}
 \author{Roberto Stelling}
 %\date{}							% Activate to display a given date or no date
@@ -41,7 +38,7 @@
    \vspace*{\stretch{2.0}}
 \end{titlepage}
 \section{Introdução}
-O objetivo deste texto é servir de referência à minha própria trajetória no aprendizado do \Hologo{TeX} e do Mac\Hologo{TeX}, servindo como um notebook de consulta rápida. O texto não tem a pretensão de ser um manual ou tutorial de \Hologo{TeX} e Mac\Hologo{TeX}, mas é bem provável que ajude à quem vier utilizar o Mac\Hologo{TeX} no MacOS pela primeira vez.
+O objetivo deste texto é servir de referência à minha própria trajetória no aprendizado do \Hologo{TeX} e do Mac\Hologo{TeX}, servindo como um notebook de consulta rápida. O texto não tem a pretensão de ser um manual ou tutorial de \Hologo{TeX} e Mac\Hologo{TeX}, mas é bem provável que ajude à quem vier utilizar o Mac\Hologo{TeX} no Mac OS pela primeira vez. Um dos requerimentos da minha própria utilização do \Hologo{LaTeX} é conseguir editar os meus textos no Mac OS e outras plataformas, como Ubuntu e talvez Microsoft Windows, assim, além da instalação do Mac\Hologo{TeX}, falamos também da instalação e utilização de outros editores multiplataforma, como, por exemplo, o \Hologo{TeX}maker.
 \pagebreak[0]
 \section{Primeiros passos}
 \subsection{Conceitos e definições}
@@ -110,10 +107,10 @@ O \href{https://www.latex-project.org/}{The \Hologo{LaTeX} Project} mantém a inf
 \item\textbf{MacTeXtras}: Coleção de extras opcionais: \emph{Front Ends Adicionais}, \emph{Verificação de Grafia}, \emph{Documentação} e o \emph{Showcase}, com exemplos extremos de \Hologo{TeX} editados por \textbf{Gerben Wierda}.
 \end{enumerate}
 \item \textbf{Preâmbulo}: Documentos \Hologo{LaTeX} são divididos em preâmbulo e texto do documento. É a parte inicial do documento que vai da linha \texttt{\textbackslash documentclass\{classeDocumento\}} até a linha \texttt{\textbackslash begin\{document\}}.
-\item \textbf{Texto do documento}: É o conteúdo do seu documento \Hologo{LaTeX}, que vai da linha \texttt{\textbackslash begin\{document\}} até a linha \texttt{\textbackslash end\{document\}}.
+\item \textbf{Texto do documento}: É o conteúdo do seu documento \Hologo{LaTeX}. Está delimitado pelos marcadores  \texttt{\textbackslash begin\{document\}} e \texttt{\textbackslash end\{document\}}.
 \end{enumerate}
 \subsection{Ambiente}
-Esse documento foi produzido no MacOS 10.13 (High Sierra) e Mac\Hologo{TeX} da versão de \DTMdate{2017-05-24} que foi baixado no dia \DTMdate{2018-01-23}. Os procedimentos descritos nesse documento não foram testados em outras plataformas. 
+Esse documento foi produzido no Mac OS 10.13 (High Sierra) e Mac\Hologo{TeX} da versão de \DTMdate{2017-05-24} que foi baixado no dia \DTMdate{2018-01-23}. Os procedimentos descritos nesse documento não foram testados em outras plataformas. 
 \subsection{Download}
 O primeiro passo é baixar o Mac\Hologo{TeX} da página do \href{http://www.tug.org/mactex/index.html}{\Hologo{TeX} Users Group}.
 Ná página há uma referência às distribuições de Mac OS que são compatíveis, quando acessei era compatível com Mac OS 10.10 ou superior. Há duas alternativas:
@@ -258,7 +255,50 @@ A partir deste ponto você pode, e deve, modificar o seu texto e clicar em \emph{
 \item George Grätzer's Short Course
 \end{itemize}
 \pagebreak[3]
-\section{Referência rápida de comandos}
+\section{Outros editores}
+Nesse ponto já temos um ambiente funcional \Hologo{LaTeX} no Mac OS, mas se você tem, como eu, a necessidade de produzir os seus textos em mais de uma plataforma, então você precisará de um editor \Hologo{LaTeX} que possa ser usado nas plataformas que você utiliza. Há na Wikipedia uma lista completa de editores \Hologo{LaTeX}, veja em \href{https://en.wikipedia.org/wiki/Comparison_of_TeX_editors}{https://en.wikipedia.org/wiki/Comparison\_of\_TeX\_editors}. Para escolher a melhor alternativa para o meu cenário (primordialmente Mac OS e Ubuntu), me concentrei nas seguintes opções:
+\begin{itemize}
+\item \Hologo{TeX}studio: O \Hologo{TeX}studio é um editor multiplataforma, com versões Windows, Mac OS e Linux(Ubuntu), seu projeto pode ser encontrado no \href{https://sourceforge.net/projects/texstudio/}{Sourceforge - TeXstudio}.
+\item \Hologo{TeX}maker: Outro editor multiplataforma com suporte a Windows, Mac OS e Linux. O projeto pode ser encontrado na página do  \href{http://www.xm1math.net/texmaker/}{\Hologo{TeX}maker}.
+\item Share\Hologo{LaTeX}: O Share\Hologo{LaTeX} é um ambiente web para edição de textos \Hologo{LaTeX}. A sua principal vantagem, e seu maior defeito, é o fato de ser um editor online. Não há custo para apenas um usuário, mas você só poderá editar seus arquivos enquanto tiver acesso à internet. Por outro lado o site do \href{https://www.sharelatex.com/}{Share\Hologo{LaTeX}} possui uma grande quantidade de tutoriais, todos de ótima qualidade, e é facílimo de utilizar. Recomendo como alternativa para quem não quer ou não pode instalar o \Hologo{LaTeX} na sua própria máquina e não tem restrições quanto à necessidade de trabalhar online.
+\end{itemize}
+Acabei optando pelo \Hologo{TeX}maker, os dois editores são similares em funcionalidades mas encontrei boas avaliações do \Hologo{TeX}maker e a instalação no Ubunto é facílima.
+\subsection{Instalando o \Hologo{TeX}maker}
+\subsubsection{Ubuntu}
+A instalação do \Hologo{TeX}maker no Ubuntu é simples, mas não necessariamente rápida. É necessário primeiro instalar o \Hologo{TeX}live e depois o próprio \Hologo{TeX}maker.\par
+\textbf{Instalando o \Hologo{TeX}live}.\par
+Em uma caixa de texto dê o comando:
+\begin{verbatim}
+sudo apt-get install texlive-full
+\end{verbatim}
+Embora a versão full do \Hologo{TeX}live ocupe muito mais espaço que a versão light, eu recomendo a sua instalação: os pacotes incluídos serão certamente utilizados (ainda que não todos eles...) a longo prazo e é melhor usar um pouco mais de espaço em disco do que ter que instalar novos pacotes toda vez que você precisar de uma funcionalidade adicional. Isso é particularmente importante para quem utiliza o \Hologo{TeX}live em um idioma diferente de inglês! O próximo passo é instalar o \Hologo{TeX}maker.\par
+\textbf{Instalando o \Hologo{TeX}maker}.\par
+Em uma caixa de texto dê o comando:
+\begin{verbatim}
+sudo apt-get install texmaker
+\end{verbatim}
+\subsubsection{Mac OS}
+A instalação do \Hologo{TeX}maker no Mac OS requer que se baixe o arquivo \texttt{.dmg} to site to \Hologo{TeX}maker e depois, em função da sua versão do Mac OS, pode ser necessário fazer alguns ajustes de segurança para poder utilizar o pacote.\par
+\textbf{Instalando o \Hologo{TeX}maker}.\par
+\begin{enumerate}
+\item Vá ao site do \Hologo{TeX}maker e clique na página de Download:
+\begin{itemize}
+\item \href{http://www.xm1math.net/texmaker/download.html}{http://www.xm1math.net/texmaker/download.html}
+\end{itemize}
+\item Baixe a versão Mac OS para o diretório Downloads
+\item Clique duas vezes no arquivo baixado e siga as instruções de instalação. Não se esqueça de mover o \Hologo{TeX}maker para a pasta \textbf{Applications} do Mac OS.
+\item Agora o \Hologo{TeX}maker aparece no \textbf{Launchpad} mas pode ser que você veja a seguinte mensagem, ou similar, quando tentar iniciar o \Hologo{TeX}maker:
+\begin{verbatim}
+"texmaker.app" can't be opened because it is from an unidentified developer
+\end{verbatim}
+Nesse caso vá até a pasta \textbf{Applications}, clique com o botão direito do mouse (ou control-click) no \Hologo{TeX}maker, e quando a mesma mensagem acima aparacer, selecione o botão \emph{open}. Assim será criada uma exceção de segurança para o \Hologo{TeX}maker e você poderá iniciar o aplicativo pelo \textbf{Launchpad}. O controle de acesso é feito pelo Gatekeeper, da Apple. Para mais informações sobre o Gatekeeper, veja a sua página na \href{https://en.wikipedia.org/wiki/Gatekeeper_(macOS)}{Wikipedia}.
+\end{enumerate}
+\subsubsection{Pós-instalação}
+Com o \Hologo{TeX}maker instalado, o próximo passo é ver a sua documentação, que está disponível na página de \href{http://www.xm1math.net/texmaker/doc.html}{Documentação do \Hologo{TeX}maker}.\par
+A princípio não deve ser necessário fazer nenhuma configuração além da mudança da codificação default de arquivos, de \verb|utf-8| para \verb|iso-8859-1|.\par 
+A partir deste momento, pode-se utilizar o \Hologo{TeX}maker para editar todos os seus arquivos \Hologo{LaTeX} no seu sistema operacional de preferência.
+Há diferenças entre o \Hologo{TeX}Shop e \Hologo{TeX}maker e pode ser que você prefira um ou o outro mas caso você vá usar o editor em dois sistemas operacionais diferentes, recomendo que se adapte ao \Hologo{TeX}maker. Até o momento achei o \Hologo{TeX}maker mais fácil e amigável que o \Hologo{TeX}Shop mas, por outro lado, prefiro a revisão de grafia do \Hologo{TeX}Shop.
+\section{Referência rápida de comandos \Hologo{LaTeX}}
 \begin{verbatim}
 \emph{texto}
 \end{verbatim}
