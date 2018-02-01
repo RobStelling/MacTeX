@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  30 JAN 2018 19:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.31)  1 FEB 2018 17:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **"Tutorial MacTeX.tex"
 (./Tutorial MacTeX.tex
 LaTeX2e <2017-04-15>
-Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
+Babel <3.17> and hyphenation patterns for 84 language(s) loaded.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/size10.clo
@@ -57,10 +57,10 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 Package: parskip 2001/04/09 non-zero parskip adjustments
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
@@ -71,15 +71,7 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
-
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count90
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen111
 \Gin@req@width=\dimen112
@@ -96,8 +88,14 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/hologo.sty
-Package: hologo 2016/05/16 v1.12 A logo collection with bookmark support (HO)
+Package: hologo 2017/05/01 v1.13 A logo collection with bookmark support (HO)
 
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
@@ -117,7 +115,7 @@ Package etexcmds Info: Could not find \expanded.
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 )
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -125,15 +123,25 @@ Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 ))
 (/usr/local/texlive/2017/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2017/05/19 3.10 The Babel package
+Package: babel 2018/01/24 3.17 The Babel package
 
+(/usr/local/texlive/2017/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2018/01/24 3.17 Babel switching mechanism
+)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/babel-portuges/portuges.ldf
 Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
 
 (/usr/local/texlive/2017/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2017/05/19 3.10 Babel common definitions
-\babel@savecnt=\count91
+File: babel.def 2018/01/24 3.17 Babel common definitions
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2018/01/24 3.17 Babel switching mechanism
+)
+\babel@savecnt=\count90
 \U@D=\dimen113
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@dirlevel=\count91
 )
 \l@brazilian = a dialect from \language\l@portuges 
 Package babel Info: Making " an active character on input line 145.
@@ -153,7 +161,7 @@ Package: tracklang 2017/03/25 v1.3.4 (NLCT) Track Languages
 
 (/usr/local/texlive/2017/texmf-dist/tex/generic/tracklang/tracklang.tex))
 (/usr/local/texlive/2017/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
+Package: etoolbox 2017/11/22 v2.5 e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count92
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/xkeyval/xkeyval.sty
@@ -376,7 +384,7 @@ Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 38.
 Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 
@@ -467,9 +475,8 @@ Package babel Info: Redefining portuges shorthand "|
  [3]
 <imagens/LaunchPad.png, id=122, 1242.6425pt x 392.46625pt>
 File: imagens/LaunchPad.png Graphic file (type png)
-
 <use imagens/LaunchPad.png>
-Package pdftex.def Info: imagens/LaunchPad.png used on input line 143.
+Package pdftex.def Info: imagens/LaunchPad.png  used on input line 143.
 (pdftex.def)             Requested size: 430.00462pt x 135.80821pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 153.
@@ -482,12 +489,10 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 169.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 170.
-
 <imagens/TeXShop.png, id=135, 275.0275pt x 204.765pt>
 File: imagens/TeXShop.png Graphic file (type png)
-
 <use imagens/TeXShop.png>
-Package pdftex.def Info: imagens/TeXShop.png used on input line 176.
+Package pdftex.def Info: imagens/TeXShop.png  used on input line 176.
 (pdftex.def)             Requested size: 137.51341pt x 102.38223pt.
 
 
@@ -495,26 +500,23 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <imagens/TeXShopBlank.png, id=137, 798.985pt x 216.81pt>
 File: imagens/TeXShopBlank.png Graphic file (type png)
-
 <use imagens/TeXShopBlank.png>
-Package pdftex.def Info: imagens/TeXShopBlank.png used on input line 186.
+Package pdftex.def Info: imagens/TeXShopBlank.png  used on input line 186.
 (pdftex.def)             Requested size: 430.00462pt x 116.68527pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <imagens/TeXShopLatexTemplate.png, id=139, 792.9625pt x 468.75125pt>
 File: imagens/TeXShopLatexTemplate.png Graphic file (type png)
-
 <use imagens/TeXShopLatexTemplate.png>
-Package pdftex.def Info: imagens/TeXShopLatexTemplate.png used on input line 19
-3.
+Package pdftex.def Info: imagens/TeXShopLatexTemplate.png  used on input line 1
+93.
 (pdftex.def)             Requested size: 430.00462pt x 254.19478pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 197.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 197.
- [5]
+[5]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -525,9 +527,8 @@ Package babel Info: Redefining portuges shorthand "|
 [6 <./imagens/TeXShop.png> <./imagens/TeXShopBlank.png>]
 <imagens/TeXShopSaveAs.png, id=163, 790.955pt x 461.725pt>
 File: imagens/TeXShopSaveAs.png Graphic file (type png)
-
 <use imagens/TeXShopSaveAs.png>
-Package pdftex.def Info: imagens/TeXShopSaveAs.png used on input line 231.
+Package pdftex.def Info: imagens/TeXShopSaveAs.png  used on input line 231.
 (pdftex.def)             Requested size: 430.00462pt x 251.01868pt.
 
 
@@ -535,11 +536,9 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <imagens/AloMundo.png, id=165, 627.34375pt x 344.28625pt>
 File: imagens/AloMundo.png Graphic file (type png)
-
 <use imagens/AloMundo.png>
-Package pdftex.def Info: imagens/AloMundo.png used on input line 239.
+Package pdftex.def Info: imagens/AloMundo.png  used on input line 239.
 (pdftex.def)             Requested size: 430.00462pt x 235.99751pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -610,24 +609,29 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 503.
  [15]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 524.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 524.
+(babel)             in language  on input line 547.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 524.
+(babel)             in language  on input line 547.
  [16]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 524.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 549.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 549.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 549.
+ [17]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 549.
  (./Tutorial MacTeX.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 524.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 524.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 549.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 549.
 Package rerunfilecheck Info: File `"Tutorial MacTeX".out' has not changed.
 (rerunfilecheck)             Checksum: F92ED33580274621E5E6D0AD2511FC19;1053.
  ) 
 Here is how much of TeX's memory you used:
- 10362 strings out of 492995
- 171912 string characters out of 6132704
- 278019 words of memory out of 5000000
- 13694 multiletter control sequences out of 15000+600000
+ 10373 strings out of 492980
+ 172437 string characters out of 6132509
+ 276718 words of memory out of 5000000
+ 13712 multiletter control sequences out of 15000+600000
  16078 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  33i,7n,37p,1304b,543s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -647,10 +651,10 @@ exlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/tex
 live/2017/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texli
 ve/2017/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive
 /2017/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on "Tutorial MacTeX.pdf" (17 pages, 1298270 bytes).
+Output written on "Tutorial MacTeX.pdf" (18 pages, 1300681 bytes).
 PDF statistics:
- 314 PDF objects out of 1000 (max. 8388607)
- 265 compressed objects within 3 object streams
- 68 named destinations out of 1000 (max. 500000)
+ 320 PDF objects out of 1000 (max. 8388607)
+ 270 compressed objects within 3 object streams
+ 69 named destinations out of 1000 (max. 500000)
  167 words of extra memory for PDF output out of 10000 (max. 10000000)
 

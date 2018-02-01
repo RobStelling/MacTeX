@@ -499,7 +499,7 @@ Page break é um tema interessante e o manual do Latex talvez deixe passar alguns
 \begin{verbatim}
 \loseness+1 Início de parágrafo...
 \end{verbatim}
-Informa ao \Hologo{LaTeX} que se parágrafo pode ocupar uma linha a mais, caso seja necessário para jogar o fim do parágrafo para a próxima página (isso pode ser desejável quando a página seguinte possui apenas uma única, solitária e deslocada linha! :).
+Informa ao \Hologo{LaTeX} que se parágrafo pode ocupar uma linha a mais, caso seja necessário para jogar o fim do parágrafo para a próxima página (isso pode ser desejável quando a página seguinte possuir apenas uma única, solitária e deslocada linha! :).
 \begin{verbatim}
 \loseneness-1 Início de parágrafo...
 \end{verbatim}
@@ -521,4 +521,29 @@ Similar à \verb|\newpage| mas imagens também são impressas.
 \end{verbatim}
 Similar à \verb|\clearpage| mas força mais uma página, se necessário, para que a próxima página a imprimir seja de numeração ímpar.
 
+\begin{verbatim}
+No preâmbulo:
+\usepackage[opções]{natbib}
+
+No corpo do documento (usualmente no final):
+\bibliography{arquivoBibliografia}
+\bibliographystyle{estiloBibliografia}
+
+Nos locais de citação:
+\citep{refCitação}
+\citet{refCitação}
+\end{verbatim}
+A princípio, isso é tudo o que você precisa para usar bibliografia e citações no \Hologo{LaTeX}. Mas vamos por partes...\par
+O \texttt{natbib} é uma reimplementação do comando \verb|\cite| do \Hologo{LaTeX}, que funciona com citações numéricas e autor-ano. É compatível com arquivos bibliográficos padrão.
+
+O comando \verb|\bibliography{arquivoBibliografia}| informa o nome do arquivo de referências bibliográficas, e \verb|\bibliographystyle{arquivoEstiloBibliografia}| indica o estilo de bibliografia a usar.
+
+As citações são incluídas no texto com \verb|\citep{refCitação}| para citações entre parênteses e \verb|\citet{refCitação}| para citações textuais.
+Para uma refência completa do \texttt{natbib} veja:\par \href{http://ctan.math.washington.edu/tex-archive/macros/latex/contrib/natbib/natnotes.pdf}{http://ctan.math.washington.edu/tex-archive/macros/latex/contrib/natbib/natnotes.pdf}
+
+O Mac\Hologo{TeX} inclui o \emph{BibDesk}, que permite que você gerencie a sua bibliografia e utilize o arquivo de saída para as citações.
+
+É importante observar que depois de gerar, ou atualizar, o arquivo de citações e ter indicado o nome deste arquivo no comando \verb|\bibliography{arquivoBibliografia}| é necessário, utilizando o seu editor \Hologo{TeX}, executar o comando Bib\Hologo{TeX} uma vez e o comando \Hologo{LaTeX} duas vezes, depois faça o build ou Typesetting do documento e as citações serão preenchidas. Sem essas etapas as citações aparecerão apenas como \texttt{[?]}.
+
+A gestão de bibliografia é um tema à parte, que merece seu próprio tutorial mas escapa do objetivo deste texto. Recomendo a leitura de tutoriais do BibDesk ou do software que você utiliza para citações, recomendo também a utilização do Google Scholar: \href{https://scholar.google.com/}{https://scholar.google.com/}, para pesquisa de artigos, livros e citações.
 \end{document}
