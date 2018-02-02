@@ -17,6 +17,8 @@
 \usepackage[brazilian]{datetime2}
 
 \usepackage[normalem]{ulem}
+
+\usepackage[usenames, dvipsnames]{color}
 %SetFonts
 
 %\usepackage{hyperref} 				% For URLs
@@ -47,13 +49,13 @@
    \vspace*{\stretch{2.0}}
 \end{titlepage}
 \section{Introdução}
-O objetivo deste texto é servir de referência à minha própria trajetória no aprendizado do \Hologo{TeX} e do Mac\Hologo{TeX}, funcionando como um notebook de consulta rápida. O texto não tem a pretensão de ser um manual ou tutorial de \Hologo{TeX} e Mac\Hologo{TeX}, mas é bem provável que ajude à quem vier utilizar o Mac\Hologo{TeX} no Mac OS pela primeira vez. Um dos requerimentos da minha própria utilização do \Hologo{LaTeX} é conseguir editar os meus textos no Mac OS e outras plataformas, como Ubuntu e talvez Microsoft Windows, assim, além da instalação do Mac\Hologo{TeX}, falaremos também da instalação e utilização de editores multiplataforma, como, por exemplo, o \Hologo{TeX}maker.
+O objetivo deste texto é servir de referência à minha própria trajetória no aprendizado do \Hologo{TeX} e do Mac\Hologo{TeX}, funcionando como um notebook de consulta rápida. O texto não tem a pretensão de ser um manual ou tutorial de \Hologo{TeX}, \Hologo{LaTeX} ou Mac\Hologo{TeX}, mas é bem provável que ajude à quem vier utilizar o Mac\Hologo{TeX} no Mac OS pela primeira vez. Um dos requerimentos da minha própria utilização do \Hologo{LaTeX} é conseguir editar os meus textos no Mac OS e outras plataformas, como Ubuntu e talvez Microsoft Windows, assim, além da instalação do Mac\Hologo{TeX}, falaremos também da instalação e utilização de editores multiplataforma, como, por exemplo, o \Hologo{TeX}maker.
 \pagebreak[0]
 \section{Primeiros passos}
 \subsection{Conceitos e definições}
 Antes de começar, vamos ver as definições de alguns dos termos que usaremos com frequência nesse texto:
 \begin{enumerate}
-\item \textbf{\Hologo{TeX}}: \Hologo{TeX} é o sistema de composição tipográfica desenvolvido por \href{http://sunburn.stanford.edu/~knuth/}{Donand E. Knuth}, que diz, no prefácio do seu livro sobre \Hologo{TeX} (veja na seção referências), que "\emph{\Hologo{TeX} tem o objetivo de criar livros bonitos - especialmente livros que contém muita matemática}". Knuth desenvolveu a primeira versão do \Hologo{TeX} em 1978 para gerenciar as revisões da sua série \emph{"the Art of Computer Programming"}. A ideia mostrou-se popular e Knuth produziu uma segunda versão, em 1982, que é a base do que se usa atualmente.
+\item \textbf{\Hologo{TeX}}: \Hologo{TeX} é o sistema de composição tipográfica desenvolvido por \href{http://sunburn.stanford.edu/~knuth/}{Donand E. Knuth}, que diz, no prefácio do seu livro sobre \Hologo{TeX}, que "\emph{\Hologo{TeX} tem o objetivo de criar livros bonitos - especialmente livros que contém muita matemática}". Knuth desenvolveu a primeira versão do \Hologo{TeX} em 1978 para gerenciar as revisões da sua série \emph{"the Art of Computer Programming"}. A ideia mostrou-se popular e Knuth produziu uma segunda versão, em 1982, que é a base do que se usa atualmente.
 \Hologo{TeX} é um macro processador, que oferece aos seus usuários funcionalidades poderosas de programação. Para compor um documento, mescla-se macros e texto e as macros definem um ambiente onde as regras de publicação do texto são produzidas. O motor do \Hologo{TeX} básico é de difícil uso e aprendizado. Reconhecendo esta deficiência (e não querendo escrever as mesmas definições no início de cada documento) Donald Knuth criou um pacote de macros para serem usadas com \Hologo{TeX}, chamada de \emph{Plain \Hologo{TeX}}. Assim Plain \Hologo{TeX} é um conjunto mínimo de macros que podem ser usadas com o \Hologo{TeX}. Quando alguém diz que está "\emph{escrevendo (ou programando) em \Hologo{TeX}}", o que se quer dizer, na verdade, é que estão programando em Plain \Hologo{TeX}.
 Então, \Hologo{TeX} é um pré-processador de texto, que tem como entradas arquivos de texto com extensão .tex, e utiliza macros e comandos para gerar a composição tipográfica do texto. Abaixo vemos um exemplo de arquivo \Hologo{TeX} (na verdade \Hologo{LaTeX}, mas a diferença não é relevante nesse momento) retirado de \href{http://www.maths.tcd.ie/~dwilkins/LaTeXPrimer/}{\emph{http://www.maths.tcd.ie/\textasciitilde dwilkins/LaTeXPrimer/}}, escrito pelo \href{https://www.maths.tcd.ie/~dwilkins/}{Dr. David R. Wilkins}, professor de matemática do Trinity College Dublin.
 \begin{verbatim}
@@ -83,7 +85,8 @@ non-zero then $f/g$ is continuous.
 
 \end{document}
 \end{verbatim}
-Esse texto, processado pelo \Hologo{TeX} com as macros definidas neste documento, tem a seguinte composição tipográfica:
+Esse texto, processado pelo \Hologo{TeX} com as macros definidas neste documento, tem a seguinte composição tipográfica:\par
+\textcolor[RGB]{168,168,168}{\hrulefill}
 
 The foundations of the rigorous study of \emph{analysis}
 were laid in the nineteenth century, notably by the
@@ -104,9 +107,9 @@ then
 One may readily verify that if $f$ and $g$ are continuous
 functions on $D$ then the functions $f+g$, $f-g$ and
 $f.g$ are continuous. If in addition $g$ is everywhere
-non-zero then $f/g$ is continuous.
-
-Atualmente \Hologo{TeX} é usado para a composição tipográfica de livros e textos dos mais variados conteúdos. \Hologo{TeX} é pronunciado como \emph{TEC}, já que o X ao fim da marca representa a letra grega Chi $\to \chi$, que está na raiz das palavras portuguesas tecnologia, técnica, entre outras. 
+non-zero then $f/g$ is continuous.\par
+\textcolor[RGB]{168,168,168}{\hrulefill}
+\par Atualmente \Hologo{TeX} é usado para a composição tipográfica de livros e textos dos mais variados conteúdos. \Hologo{TeX} é pronunciado como \emph{TEC}, já que o X ao fim da marca representa a letra grega Chi $\to \chi$, que está na raiz das palavras portuguesas tecnologia, técnica, entre outras. 
 
 \item \textbf{\Hologo{LaTeX}}: \Hologo{LaTeX} é um sistema de preparação de documentos para composição tipográfica de alta qualidade. É usado principalmente para documentos técnicos e científicos de médio e grande porte, mas pode ser utilizado para qualquer forma de publicação. O conceito central de \Hologo{LaTeX} é a separação entre conteúdo e apresentação, permitindo que o mesmo conteúdo seja apresentado em vários formatos distintos sem muita dificuldade. Assim, um texto que precisa ser apresentado no formato de uma determinada conferência ou publicação, pode ser facilmente adaptado ao formato de outra conferência ou publicação. O \Hologo{LaTeX} é um  pacote de macros \Hologo{TeX}, escrito originalmente por \href{https://en.wikipedia.org/wiki/Leslie_Lamport}{Leslie Lamport}, que provê um sistema de processamento de documentos. \Hologo{LaTeX} permite o uso de markups para descrever a estrutura de um documento, de forma que usuário não precisa se preocupar com a apresentação do documento. Ao utilizar classes de documentos e pacotes \emph{add-on}, o mesmo documento pode ser produzido em uma variedade distinta de \emph{layouts}. Lamport diz que \Hologo{LaTeX} "\emph{representa o equilíbrio entre funcionalidade e facilidade de uso}".
 O \href{https://www.latex-project.org/}{The \Hologo{LaTeX} Project} mantém a informação, distribuição código do \Hologo{LaTeX} e também gerencia o projeto de pesquisa e desenvolvimento da próxima versão do sistema, o \Hologo{LaTeX3}. 
@@ -311,7 +314,7 @@ Há diferenças entre o \Hologo{TeX}Shop e \Hologo{TeX}maker e pode ser que você p
 Há várias alternativas para compartilhar o mesmo texto \Hologo{LaTeX} entre dois computadores, mas é importante levar em consideração que um texto \Hologo{LaTeX} é na verdade um conjunto de arquivos, possivelmente com subpastas. Assim a melhor opção é manter cada texto em sua própria pasta e compartilhar estas pastas entre vários computadores.\par
 As alternativas a considerar são:
 \begin{itemize}
-\item \emph{Dropbox}: Manter seus arquivos em subpastas do \href{http://www.dropbox.com}{Dropbox} é uma ótima alternativa, mas é importante levar em consideração que toda atualização dos documentos (a cada Typesetting ou a cada Quick Build) irá atualizar os arquivos na nuvem, e em geral são atualizados entre 6 a 8 arquivos por vez! Considere se esse cenário é adequado para você antes de escolher esta alternativa. O Dropbox possui clientes nativos para Mac OS, Ubuntu e Windows.\par
+\item \emph{Dropbox}: Manter seus arquivos em subpastas do \href{http://www.dropbox.com}{Dropbox} é uma ótima alternativa, mas é importante levar em consideração que toda atualização dos documentos (a cada Typesetting ou a cada Quick Build) irá atualizar os arquivos na nuvem, e em geral são atualizados entre 4 a 8 arquivos por vez! Considere se esse cenário é adequado para você antes de escolher esta alternativa. O Dropbox possui clientes nativos para Mac OS, Ubuntu e Windows.\par
 Creio que a melhor organização dos arquivos é uma estrutura de diretórios similar à sugerida abaixo, essa estrutura se aplica a qualquer sistema de compartilhamento de arquivos na nuvem, mudando apenas a localização da primeira pasta da hierarquia:
 \begin{verbatim}
 Dropbox
@@ -545,5 +548,16 @@ O Mac\Hologo{TeX} inclui o \emph{BibDesk}, que permite que você gerencie a sua b
 
 É importante observar que depois de gerar, ou atualizar, o arquivo de citações e ter indicado o nome deste arquivo no comando \verb|\bibliography{arquivoBibliografia}| é necessário, utilizando o seu editor \Hologo{TeX}, executar o comando Bib\Hologo{TeX} uma vez e o comando \Hologo{LaTeX} duas vezes, depois faça o build ou Typesetting do documento e as citações serão preenchidas. Sem essas etapas as citações aparecerão apenas como \texttt{[?]}. O mesmo procedimento deve ser repetido a cada vez que você incluir uma nova citação no seu texto.
 
-A gestão de bibliografia é um tema à parte, que merece seu próprio tutorial mas escapa do objetivo deste texto. Recomendo a leitura de tutoriais do BibDesk ou do software que você utiliza para citações, recomendo também a utilização do Google Scholar: \href{https://scholar.google.com/}{https://scholar.google.com/}, para pesquisa de artigos, livros e citações.
+A gestão de bibliografia é um tema à parte, que merece seu próprio tutorial, mas escapa do objetivo deste texto. Recomendo a leitura de tutoriais do BibDesk ou do software que você utiliza para citações, recomendo também a utilização do Google Scholar: \href{https://scholar.google.com/}{https://scholar.google.com/}, para pesquisa de artigos, livros e citações.
+\begin{verbatim}
+\textcolor{red}{vermelho}
+\textcolor[RGB]{139,139,139}{cinza}
+\colorbox{orange}{laranja}
+\end{verbatim}
+A forma mais simples de controle de cor de texto e fundo é utlizando o comando \verb|\textcolor|, por exemplo \textcolor{red}{vermelho} ou \textcolor[RGB]{139,139,139}{cinza}. Já o comando \verb|\colorbox| cria uma caixa colorida ao redor do texto, por exemplo: \colorbox{orange}{laranja}.
+\begin{verbatim}
+No preâmbulo:
+\usepackage[usenames, dvipsnames]{color}
+\end{verbatim}
+Os pacotes \emph{usenames} e \emph{dvipsnames} extendem o conjunto de cores que podem ser usadas nos comandos que referenciam cor, como por exemplo \textcolor{ForestGreen}{\emph{ForestGreen}}, \textcolor{BurntOrange}{\emph{BurntOrange}}, \colorbox{GreenYellow}{GreenYellow} etc.
 \end{document}
