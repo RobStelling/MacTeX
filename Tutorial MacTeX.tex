@@ -17,7 +17,6 @@
 \usepackage[brazilian]{datetime2}
 
 \usepackage[normalem]{ulem}
-
 \usepackage[usenames, dvipsnames]{color}
 %SetFonts
 
@@ -49,7 +48,7 @@
    \vspace*{\stretch{2.0}}
 \end{titlepage}
 \section{Introdução}
-O objetivo deste texto é servir de referência à minha própria trajetória no aprendizado do \Hologo{TeX} e do Mac\Hologo{TeX}, funcionando como um notebook de consulta rápida. O texto não tem a pretensão de ser um manual ou tutorial de \Hologo{TeX}, \Hologo{LaTeX} ou Mac\Hologo{TeX}, mas é bem provável que ajude à quem vier utilizar o Mac\Hologo{TeX} no Mac OS pela primeira vez. Um dos requerimentos da minha própria utilização do \Hologo{LaTeX} é conseguir editar os meus textos no Mac OS e outras plataformas, como Ubuntu e talvez Microsoft Windows, assim, além da instalação do Mac\Hologo{TeX}, falaremos também da instalação e utilização de editores multiplataforma, como, por exemplo, o \Hologo{TeX}maker.
+O objetivo deste texto é servir de referência ao aprendizado do \Hologo{TeX} e do Mac\Hologo{TeX}, funcionando como um notebook de consulta rápida. O texto não tem a pretensão de ser um manual ou tutorial de \Hologo{TeX}, \Hologo{LaTeX} ou Mac\Hologo{TeX}, mas é bem provável que seja útil à quem vier utilizar o Mac\Hologo{TeX} no Mac OS pela primeira vez. Um dos requerimentos da minha própria utilização do \Hologo{LaTeX} é conseguir editar e compartilhar os mesmos textos no Mac OS e outras plataformas, como Ubuntu e talvez Microsoft Windows. Assim, além da instalação do Mac\Hologo{TeX}, falaremos também da instalação e utilização de editores multiplataforma, como, por exemplo, o \Hologo{TeX}maker, já que há um benefício natural em utilizar os mesmo editores \Hologo{TeX}/\Hologo{LaTeX} em plataformas diferentes.
 \pagebreak[0]
 \section{Primeiros passos}
 \subsection{Conceitos e definições}
@@ -274,7 +273,7 @@ Nesse ponto já temos um ambiente funcional \Hologo{LaTeX} no Mac OS, mas se você
 \item \Hologo{TeX}maker: Outro editor multiplataforma com suporte a Windows, Mac OS e Linux. O projeto pode ser encontrado na página do  \href{http://www.xm1math.net/texmaker/}{\Hologo{TeX}maker}.
 \item Share\Hologo{LaTeX}: O Share\Hologo{LaTeX} é um ambiente web para edição de textos \Hologo{LaTeX}. A sua principal vantagem, e seu maior defeito, é o fato de ser um editor online. Não há custo para apenas um usuário, mas você só poderá editar seus arquivos enquanto tiver acesso à internet. Por outro lado o site do \href{https://www.sharelatex.com/}{Share\Hologo{LaTeX}} possui uma grande quantidade de tutoriais, todos de ótima qualidade, e é facílimo de utilizar. Recomendo como alternativa para quem não quer ou não pode instalar o \Hologo{LaTeX} na sua própria máquina e não tem restrições quanto à necessidade de trabalhar online.
 \end{itemize}
-Acabei optando pelo \Hologo{TeX}maker, os dois editores são similares em funcionalidades mas encontrei boas avaliações do \Hologo{TeX}maker e a instalação no Ubunto é facílima.
+Acabei optando pelo \Hologo{TeX}maker, os dois editores são similares em funcionalidades mas encontrei boas avaliações do \Hologo{TeX}maker e a instalação no Ubuntu é facílima.
 \subsection{Instalando o \Hologo{TeX}maker}
 \subsubsection{Ubuntu}
 A instalação do \Hologo{TeX}maker no Ubuntu é simples, mas não necessariamente rápida. É necessário primeiro instalar o \Hologo{TeX}live e depois o próprio \Hologo{TeX}maker.\par
@@ -283,7 +282,7 @@ Em uma caixa de texto dê o comando:
 \begin{verbatim}
 sudo apt-get install texlive-full
 \end{verbatim}
-Embora a versão full do \Hologo{TeX}live ocupe muito mais espaço que a versão light, eu recomendo a sua instalação: os pacotes incluídos serão certamente utilizados (ainda que não todos eles...) a longo prazo e é melhor usar um pouco mais de espaço em disco do que ter que instalar novos pacotes toda vez que você precisar de uma funcionalidade adicional. Isso é particularmente importante para quem utiliza o \Hologo{TeX}live em um idioma diferente de inglês! O próximo passo é instalar o \Hologo{TeX}maker.\par
+Embora a versão full do \Hologo{TeX}live ocupe muito mais espaço que a versão light, eu recomendo a sua instalação: os pacotes incluídos serão certamente utilizados (ainda que não todos eles...) e a longo prazo é melhor usar um pouco mais de espaço em disco do que ter que instalar novos pacotes toda vez que você precisar de uma funcionalidade adicional. Isso é particularmente importante para quem utiliza o \Hologo{TeX}live em um idioma diferente de inglês! O próximo passo é instalar o \Hologo{TeX}maker.\par
 \textbf{Instalando o \Hologo{TeX}maker}.\par
 Em uma caixa de texto dê o comando:
 \begin{verbatim}
@@ -309,7 +308,7 @@ Nesse caso vá até a pasta \textbf{Applications}, clique com o botão direito do m
 Com o \Hologo{TeX}maker instalado, o próximo passo é ver a sua documentação, que está disponível na página de \href{http://www.xm1math.net/texmaker/doc.html}{Documentação do \Hologo{TeX}maker}.\par
 A princípio não deve ser necessário fazer nenhuma configuração além da mudança da codificação default de arquivos, de \verb|utf-8| para \verb|iso-8859-1|.\par 
 A partir deste momento, pode-se utilizar o \Hologo{TeX}maker para editar todos os seus arquivos \Hologo{LaTeX} no seu sistema operacional de preferência.
-Há diferenças entre o \Hologo{TeX}Shop e \Hologo{TeX}maker e pode ser que você prefira um ou o outro mas caso você vá usar o editor em dois sistemas operacionais diferentes, recomendo que se adapte ao \Hologo{TeX}maker. Até o momento achei o \Hologo{TeX}maker mais fácil e amigável que o \Hologo{TeX}Shop mas, por outro lado, prefiro a revisão de grafia do \Hologo{TeX}Shop.
+Há diferenças entre o \Hologo{TeX}Shop e \Hologo{TeX}maker e pode ser que você prefira um ou o outro mas caso você precise editar seus documentos em dois sistemas operacionais diferentes, recomendo que se adapte ao \Hologo{TeX}maker. Até o momento achei o \Hologo{TeX}maker mais fácil e amigável que o \Hologo{TeX}Shop mas, por outro lado, prefiro a revisão de grafia do \Hologo{TeX}Shop.
 \section{\Hologo{LaTeX} em mais de um computador}
 Há várias alternativas para compartilhar o mesmo texto \Hologo{LaTeX} entre dois computadores, mas é importante levar em consideração que um texto \Hologo{LaTeX} é na verdade um conjunto de arquivos, possivelmente com subpastas. Assim a melhor opção é manter cada texto em sua própria pasta e compartilhar estas pastas entre vários computadores.\par
 As alternativas a considerar são:
@@ -324,7 +323,7 @@ Dropbox
         ...
 \end{verbatim}
 \item \emph{Google Drive}: O \href{https://drive.google.com}{Google Drive} é uma opção similar, em vantagens e desvantagens, à anterior mas é importante observar que não há cliente nativo do Drive para Ubuntu. Quando este documento foi escrito, a melhor alternativa para sincronização de uma pasta com o Google Drive era o \href{https://www.thefanclub.co.za/overgrive}{overGrive}. A licença do overGrive é de cerca de US\$ 5,00, vale a pena o investimento se você precisa dos seus arquivos sincronizados no Ubuntu (ou outros \emph{sabores} de Linux). Da mesma forma que o Dropbox, é recomendável manter uma hierarquia de arquivos como a mostrada acima.
-\item \emph{Github}: Uma alternativa para quem quer ter um pouco mais de controle, e não se importa com o fato dos documentos serem todos abertos ao público - ao menos na versão gratuita, é o \href{https://github.com}{GitHub}. É a opção que utilizo com maior frequência, porque me permite escolher quando e como vou sincronizar meus arquivos com o repositório online, e me permite clonar o repositório inteiro a qualquer momento de outro computador. Para usar é necessário ter o \href{https://git-scm.com/}{git} instalado localmente, o que não é um problema no Mac OS, já que ele vem instalado por default. Como o git é um pouco intimidante para quem nunca utilizou um sistema de controle de versões, eu recomendo que se utilize um dos vários GUIs disponíveis no mercado. Tenho utilizado o \href{https://www.cycligent.com/git-tool}{Cycligent Git Tool}, que possui versões para Mac OS, Windows e vários \emph{sabores} de Linux. 
+\item \emph{Github}: Uma alternativa para quem quer ter um pouco mais de controle, e não se importa com o fato dos documentos serem todos abertos ao público - ao menos na versão gratuita, é o \href{https://github.com}{GitHub}. É a opção que utilizo com maior frequência, porque me permite escolher quando e como vou sincronizar meus arquivos com o repositório online, e me permite clonar o repositório inteiro a qualquer momento de outro computador. Para usar é necessário ter o \href{https://git-scm.com/}{git} instalado localmente, o que não é um problema no Mac OS nem no Ubuntu, já que ele vem instalado por default nesses dois sistemas operacionais. Como o git é um pouco intimidante para quem nunca utilizou um sistema de controle de versões, eu recomendo a instalação de uma das várias GUIs disponíveis no mercado. Tenho utilizado o \href{https://www.cycligent.com/git-tool}{Cycligent Git Tool}, que possui versões para Mac OS, Windows e vários \emph{sabores} de Linux. 
 \end{itemize}
 \section{Referência rápida de comandos \Hologo{LaTeX}}
 \begin{verbatim}
